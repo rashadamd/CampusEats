@@ -20,7 +20,7 @@
                                         <img class="img-fluid" src="images/product/1.jpg" alt="">
                                     </div>
                                     <div class="new-arrival-content text-center mt-3">
-                                        <h4><a href="ecom-product-detail.html">Margherita</a></h4>
+                                        <h4><a href="">Margherita</a></h4>
                                         <ul class="star-rating">
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>

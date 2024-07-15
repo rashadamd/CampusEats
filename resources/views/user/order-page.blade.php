@@ -14,10 +14,7 @@
 				</div>
 				<div class="mb-4 d-flex justify-content-between align-items-center flex-wrap">
 					<div class="customer-search sm-mb-0 mb-3">
-						<!-- <div class="input-group search-area">
-							<input type="text" class="form-control" placeholder="Search here......">
-							<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
-						</div> -->
+					
 					</div>
 						
 				</div>

@@ -68,7 +68,7 @@
             Nav header start
         ***********************************-->
         <div class="nav-header">
-			<a href="userindex.html" class="brand-logo">
+			<a href="userindex" class="brand-logo">
 				<img src="user/images/logo.png" alt="CEATS" srcset="" class="logo-abbr" width="90" height="35" >
 				<img src="user/images/title.png" alt="" srcset="" class="brand-title" width="200" height="40" >
             </a>

@@ -16,7 +16,7 @@
                                 </div>
                                 <div class="profile-info">
 									<div class="profile-photo">
-										<img src="images/profile/profile.png" class="img-fluid rounded-circle" alt="">
+										<img src="user/images/profile/profile.png" class="img-fluid rounded-circle" alt="">
 									</div>
 									<div class="profile-details">
 										<div class="profile-name px-3 pt-2">
@@ -46,9 +46,9 @@
                                 <div class="profile-tab">
                                     <div class="custom-tab-1">
                                         <ul class="nav nav-tabs">
-                                            <li class="nav-item"><a href="app-profile.html#about-me" data-bs-toggle="tab" class="nav-link">About Me</a>
+                                            <li class="nav-item"><a href="userprofile#about-me" data-bs-toggle="tab" class="nav-link">About Me</a>
                                             </li>
-                                            <li class="nav-item"><a href="app-profile.html#profile-settings" data-bs-toggle="tab" class="nav-link">Setting</a>
+                                            <li class="nav-item"><a href="userprofile#profile-settings" data-bs-toggle="tab" class="nav-link">Setting</a>
                                             </li>
                                         </ul>
 

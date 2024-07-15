@@ -3,16 +3,16 @@
 @section('content')
 
 	<!-- hero-section -->
-	<section class="hero-section about checkout gap" style="background-image: url(assets/img/x2.png)">
+	<section class="hero-section about checkout gap" style="background-image: url(user/assets/img/x2.png)">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-lg-12">
 						<div class="about-text pricing-table">
 							<ul class="crumbs d-flex" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
-								<li><a href="userindex.html">Home</a></li>
-								<li><a href="userindex.html"><i class="fa-solid fa-right-long"></i>Restaurants </a></li>
-								<li><a href="userindex.html"><i class="fa-solid fa-right-long"></i>Restaurant Сard</a></li>
-								<li class="two"><a href="userindex.html"><i class="fa-solid fa-right-long"></i>Checkout</a></li>
+								<li><a href="userindex">Home</a></li>
+								<li><a href="restaurants"><i class="fa-solid fa-right-long"></i>Restaurants </a></li>
+								<li><a href="restaurantcard"><i class="fa-solid fa-right-long"></i>Restaurant Сard</a></li>
+								<li class="two"><a href="checkout"><i class="fa-solid fa-right-long"></i>Checkout</a></li>
 							</ul>
 							<h2 data-aos="fade-up"  data-aos-delay="300" data-aos-duration="400" style="color: #fff;">Checkout</h2>
 							<p data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">Sit amet nisl purus in mollis nunc sed id semper. Condimentum id venenatis a condimentum vitae sapien pellentesque.</p>
@@ -33,7 +33,7 @@
 							<h6>3</h6>
 						</div>
 						<div class="banner-wilmington">
-							<img alt="logo" src="assets/img/logo-s.jpg">
+							<img alt="logo" src="user/assets/img/logo-s.jpg">
 							<h6>Kennington Lane Cafe</h6>
 						</div>
 						<ul>
@@ -41,7 +41,7 @@
 							<i class="closeButton fa-solid fa-xmark"></i>
 							<div class="counter-container">
 								<div class="counter-food">
-									<img alt="food" src="assets/img/order-1.png">
+									<img alt="food" src="user/assets/img/order-1.png">
 									<h4>Pasta, kiwi and sauce chilli</h4>
 								</div>
 								<h3>$39</h3>
@@ -65,7 +65,7 @@
 							<i class="closeButton fa-solid fa-xmark"></i>
 							<div class="counter-container">
 								<div class="counter-food">
-									<img alt="food" src="assets/img/order-2.png">
+									<img alt="food" src="user/assets/img/order-2.png">
 									<h4>Rice with shrimps and kiwi</h4>
 								</div>
 								<h3>$49</h3>
@@ -137,16 +137,16 @@
                 				<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                 					<label>
 										  <input type="radio" name="test" value="small" checked>
-										  <img alt="checkbox-img" src="assets/img/checkbox-1.png">
+										  <img alt="checkbox-img" src="user/assets/img/checkbox-1.png">
 										</label>
 
 										<label>
 										  <input type="radio" name="test" value="big">
-										  <img alt="checkbox-img" src="assets/img/checkbox-2.png">
+										  <img alt="checkbox-img" src="user/assets/img/checkbox-2.png">
 										</label>
 										<label>
 										  <input type="radio" name="test" value="big">
-										  <img alt="checkbox-img" src="assets/img/checkbox-3.png">
+										  <img alt="checkbox-img" src="user/assets/img/checkbox-3.png">
 										</label>
 										<input type="number" name="Name" placeholder="Card number">
 											<div class="row">

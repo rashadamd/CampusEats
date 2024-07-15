@@ -3,14 +3,14 @@
 @section('content')
 
 	<!-- hero-section -->
-	<section class="hero-section about gap" style="background-image: url(assets/img/x2.png)">
+	<section class="hero-section about gap" style="background-image: url(user/assets/img/x2.png)">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="400">
 					<div class="about-text">
 						<ul class="crumbs d-flex">
-							<li><a href="index.html">Home</a></li>
-							<li class="two"><a href="index.html"><i class="fa-solid fa-right-long"></i> About Us</a></li>
+							<li><a href="userindex">Home</a></li>
+							<li class="two"><a href="userabout"><i class="fa-solid fa-right-long"></i> About Us</a></li>
 						</ul>
 						<h2 style="color:#fff">Nothing to worry about with Quickeat</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -18,7 +18,7 @@
 				</div>
 				<div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
 					<div class="about-img">
-						<img alt="man" src="assets/img/a.png">
+						<img alt="man" src="user/assets/img/a.png">
 					</div>
 				</div>
 			</div>
@@ -30,7 +30,7 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6 col-md-12 col-sm-12" data-aos="flip-up"  data-aos-delay="300" data-aos-duration="400">
 					<div class="our-mission-img">
-						<img alt="Illustration" src="assets/img/illustration-5.png">
+						<img alt="Illustration" src="user/assets/img/illustration-5.png">
 					</div>
 				</div>
 				<div class="offset-xl-1 col-lg-5 col-md-12 col-sm-12" data-aos="flip-up"  data-aos-delay="400" data-aos-duration="500">
@@ -45,14 +45,15 @@
 			</div>
 		</div>
 	</section>
+
 	<!-- cards-section -->
 	<section class="cards-section gap no-top">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12" data-aos="flip-up"  data-aos-delay="200" data-aos-duration="300">
 					<div class="card-text-data">
-						<img class="on" alt="icon" src="assets/img/service-icon-2.svg">
-						<img class="off" alt="icon" src="assets/img/service-icon-1.svg">
+						<img class="on" alt="icon" src="user/assets/img/service-icon-2.svg">
+						<img class="off" alt="icon" src="user/assets/img/service-icon-1.svg">
 
 						<h3>Free
 								Delivery</h3>
@@ -61,8 +62,8 @@
 				</div>
 				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12" data-aos="flip-up"  data-aos-delay="300" data-aos-duration="400">
 					<div class="card-text-data two">
-						<img class="on" alt="icon" src="assets/img/service-icon-3.svg">
-						<img class="off" alt="icon" src="assets/img/service-icon-4.svg">
+						<img class="on" alt="icon" src="user/assets/img/service-icon-3.svg">
+						<img class="off" alt="icon" src="user/assets/img/service-icon-4.svg">
 
 						<h3>Save
 								Your Time</h3>
@@ -71,8 +72,8 @@
 				</div>
 				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12" data-aos="flip-up"  data-aos-delay="400" data-aos-duration="500">
 					<div class="card-text-data">
-						<img class="on" alt="icon" src="assets/img/service-icon-5.svg">
-						<img class="off" alt="icon" src="assets/img/service-icon-6.svg">
+						<img class="on" alt="icon" src="user/assets/img/service-icon-5.svg">
+						<img class="off" alt="icon" src="user/assets/img/service-icon-6.svg">
 
 						<h3>Regular Discounts</h3>
 								<p>Nec tincidunt praesent semper feugiat nibh. Feugiat in ante metus dictum. Sapien nec sagittis aliquam malesuada bibendum arcu.</p>
@@ -80,8 +81,8 @@
 				</div>
 				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12" data-aos="flip-up"  data-aos-delay="500" data-aos-duration="600">
 					<div class="card-text-data two">
-						<img class="on" alt="icon" src="assets/img/service-icon-7.svg">
-						<img class="off" alt="icon" src="assets/img/service-icon-8.svg">
+						<img class="on" alt="icon" src="user/assets/img/service-icon-7.svg">
+						<img class="off" alt="icon" src="user/assets/img/service-icon-8.svg">
 
 						<h3>Variety
 								Food</h3>
@@ -111,7 +112,7 @@
 				</div>
 				<div class="col-lg-6" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="400">
 					<div class="video-section-img">
-						<img alt="elements" src="assets/img/elements-1.jpg">
+						<img alt="elements" src="user/assets/img/elements-1.jpg">
 						<a data-fancybox="" href="https://www.youtube.com/watch?v=CKnGXZxK7zs"><i class="fa-solid fa-play"></i></a>
 					</div>
 				</div>
@@ -120,12 +121,12 @@
 	</section>
 	
 	<!-- about-counters-section -->
-	<section class="about-counters-section gap" style="background-image: url(assets/img/background.png);">
+	<section class="about-counters-section gap" style="background-image: url(user/assets/img/background.png);">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-6 col-md-12 col-sm-12" data-aos="flip-up"  data-aos-delay="200" data-aos-duration="300">
 					<div class="about-counters-img">
-						<img alt="girl" src="assets/img/photo-10.png">
+						<img alt="girl" src="user/assets/img/photo-10.png">
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-12 col-sm-12" data-aos="flip-up"  data-aos-delay="300" data-aos-duration="400">
@@ -172,45 +173,46 @@
 			<div class="row">
 				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="200" data-aos-duration="300">
 					<div class="our-team">
-						<img alt="team-img" src="assets/img/team-1.png">
-						<h4><a href="about.html#">Kevin Adamson</a></h4>
+						<img alt="team-img" src="user/assets/img/team-1.png">
+						<h4><a href="#">Kevin Adamson</a></h4>
 						<p>Pellentesque adipiscing commodo
 							elit at imperdiet dui.</p>
 							<ul class="social-media">
-								<li><a href="about.html#"><i class="fa-brands fa-facebook-f"></i></a></li>
-								<li><a href="about.html#"><i class="fa-brands fa-instagram"></i></a></li>
-								<li><a href="about.html#"><i class="fa-brands fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
 							</ul>
 					</div>
 				</div>
 				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="400">
 					<div class="our-team">
-						<img alt="team-img" src="assets/img/team-2.png">
-						<h4><a href="about.html#">Roxie Gilbert</a></h4>
+						<img alt="team-img" src="user/assets/img/team-2.png">
+						<h4><a href="#">Roxie Gilbert</a></h4>
 						<p>Velit dignissim sodales ut eu sem integer vitae. Interdum varius sit amet mattis.</p>
 							<ul class="social-media">
-								<li><a href="about.html#"><i class="fa-brands fa-facebook-f"></i></a></li>
-								<li><a href="about.html#"><i class="fa-brands fa-instagram"></i></a></li>
-								<li><a href="about.html#"><i class="fa-brands fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
 							</ul>
 					</div>
 				</div>
 				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
 					<div class="our-team">
-						<img alt="team-img" src="assets/img/team-3.png">
-						<h4><a href="about.html#">Edgar Johnson</a></h4>
+						<img alt="team-img" src="user/assets/img/team-3.png">
+						<h4><a href="#">Edgar Johnson</a></h4>
 						<p>At erat pellentesque adipiscing
 								commodo elit.</p>
 							<ul class="social-media">
-								<li><a href="about.html#"><i class="fa-brands fa-facebook-f"></i></a></li>
-								<li><a href="about.html#"><i class="fa-brands fa-instagram"></i></a></li>
-								<li><a href="about.html#"><i class="fa-brands fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
 							</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
 	<!-- Our partners Section -->
 	<section class="our-partners-section gap" style="background:#fcfcfc" data-aos="fade-up"  data-aos-delay="200" data-aos-duration="300">
 		<div class="container">
@@ -220,37 +222,37 @@
 			<div class="row align-items-center logodata owl-carousel owl-theme">
 				<div class="col-xl-12 item">
 					<div class="logo-img">
-						<img alt="logo-img" src="assets/img/logo-1.png">
+						<img alt="logo-img" src="user/assets/img/logo-1.png">
 						<h5>Kings Arms</h5>
 					</div>
 				</div>
 				<div class="col-xl-12 item">
 					<div class="logo-img">
-						<img alt="logo-img" src="assets/img/logo-2.png">
+						<img alt="logo-img" src="user/assets/img/logo-2.png">
 						<h5>Wilmington</h5>
 					</div>
 				</div>
 				<div class="col-xl-12 item">
 					<div class="logo-img">
-						<img alt="logo-img" src="assets/img/logo-3.png">
+						<img alt="logo-img" src="user/assets/img/logo-3.png">
 						<h5>Kennington</h5>
 					</div>
 				</div>
 				<div class="col-xl-12 item">
 					<div class="logo-img">
-						<img alt="logo-img" src="assets/img/logo-4.png">
+						<img alt="logo-img" src="user/assets/img/logo-4.png">
 						<h5>The Victoria</h5>
 					</div>
 				</div>
 				<div class="col-xl-12 item">
 					<div class="logo-img">
-						<img alt="logo-img" src="assets/img/logo-5.png">
+						<img alt="logo-img" src="user/assets/img/logo-5.png">
 						<h5>The Andover Arms</h5>
 					</div>
 				</div>
 				<div class="col-xl-12 item">
 					<div class="logo-img">
-						<img alt="logo-img" src="assets/img/logo-1.png">
+						<img alt="logo-img" src="user/assets/img/logo-1.png">
 						<h5>Kings Arms</h5>
 					</div>
 				</div>
@@ -273,7 +275,7 @@
 							<p>
 							"Tortor vitae purus faucibus ornare suspendisse. Ut porttitor leo a diam. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Ut tortor pretium viverra suspendisse".</p>
 							<div class="thomas">
-								<img alt="girl" src="assets/img/photo-5.jpg">
+								<img alt="girl" src="user/assets/img/photo-5.jpg">
 
 								<div>
 									<h6>Thomas Adamson</h6>
@@ -289,7 +291,7 @@
 							<p>
 							"Tortor vitae purus faucibus ornare suspendisse. Ut porttitor leo a diam. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Ut tortor pretium viverra suspendisse".</p>
 							<div class="thomas">
-								<img alt="girl" src="assets/img/photo-5.jpg">
+								<img alt="girl" src="user/assets/img/photo-5.jpg">
 
 								<div>
 									<h6>Thomas Adamson</h6>
@@ -307,8 +309,9 @@
 			</div>
 		</div>
 	</section>
+	
 	<!-- subscribe-section -->
-	<section class="subscribe-section about gap" style="background-image: url(assets/img/background-img.jpg);" >
+	<section class="subscribe-section about gap" style="background-image: url(user/assets/img/background-img.jpg);" >
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">

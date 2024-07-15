@@ -213,9 +213,9 @@
 						<a href="callto:+94799999999"><i class="fa-solid fa-phone"></i>+94 79 999 9999</a>
 					</div>
 					<ul class="social-media">
-							<li><a href="index.html#"><i class="fa-brands fa-facebook-f"></i></a></li>
-							<li><a href="index.html#"><i class="fa-brands fa-instagram"></i></a></li>
-							<li><a href="index.html#"><i class="fa-brands fa-twitter"></i></a></li>
+							<li><a href="index"><i class="fa-brands fa-facebook-f"></i></a></li>
+							<li><a href="index"><i class="fa-brands fa-instagram"></i></a></li>
+							<li><a href="index"><i class="fa-brands fa-twitter"></i></a></li>
 						</ul>
 				</div>
 			</div>

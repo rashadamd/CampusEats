@@ -51,9 +51,9 @@
                                 <div class="profile-tab">
                                     <div class="custom-tab-1">
                                         <ul class="nav nav-tabs">
-                                            <li class="nav-item"><a href="app-profile.html#about-me" data-bs-toggle="tab" class="nav-link active show">About Me</a>
+                                            <li class="nav-item"><a href="profile#about-me" data-bs-toggle="tab" class="nav-link active show">About Me</a>
                                             </li>
-                                            <li class="nav-item"><a href="app-profile.html#profile-settings" data-bs-toggle="tab" class="nav-link">Setting</a>
+                                            <li class="nav-item"><a href="profile#profile-settings" data-bs-toggle="tab" class="nav-link">Setting</a>
                                             </li>
                                         </ul>
                                         <div class="tab-content">

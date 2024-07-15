@@ -41,7 +41,7 @@
 													</div>
                                                 </td>
                                                 <td class="py-2">
-                                                    <a href="ecom-product-order.html#">
+                                                    <a href="productorder">
                                                         <strong>#181</strong></a> by <strong>Ricky
                                                         Antony</strong><br /><a href="mailto:ricky@example.com">ricky@example.com</a></td>
                                                 <td class="py-2">20/04/2020</td>
@@ -71,7 +71,7 @@
 													</div>
                                                 </td>
                                                 <td class="py-2">
-                                                    <a href="ecom-product-order.html#">
+                                                    <a href="productorder">
                                                         <strong>#182</strong></a> by <strong>Kin Rossow</strong><br /><a href="mailto:kin@example.com">kin@example.com</a></td>
                                                 <td class="py-2">20/04/2020</td>
                                                 <td class="py-2">Kin Rossow, 1 Hollywood Blvd,Beverly Hills, California 90210
@@ -101,7 +101,7 @@
 													</div>
                                                 </td>
                                                 <td class="py-2">
-                                                    <a href="ecom-product-order.html#">
+                                                    <a href="productorder>
                                                         <strong>#183</strong></a> by <strong>Merry
                                                         Diana</strong><br /><a href="mailto:merry@example.com">merry@example.com</a></td>
                                                 <td class="py-2">30/04/2020</td>
