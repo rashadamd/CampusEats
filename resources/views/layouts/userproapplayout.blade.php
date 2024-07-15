@@ -94,26 +94,22 @@
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
 							<div class="nav-item">
-								<!-- <div class="input-group search-area">
-									<input type="text" class="form-control" placeholder="Search here">
-									<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
-								</div> -->
-
+								
 								<div class="col-lg-8">
 									<nav class="navbar">
 									  <ul class="navbar-links">
 										<li class="navbar-dropdown {{ Request::is('userindex') ? 'active' : '' }} ">
-										  <a href="userindex.html">Home</a>
+										  <a href="userindex">Home</a>
 										</li>
 										<li class="navbar-dropdown {{ Request::is('userabout') ? 'active' : '' }} ">
-										  <a href="userabout.html">About </a>
+										  <a href="userabout">About </a>
 										</li>
 										<li class="navbar-dropdown {{ Request::is('restaurants') ? 'active' : '' }} ">
-										  <a href="restaurants.html">Restaurants</a>
+										  <a href="restaurants">Restaurants</a>
 										  <div class="dropdown">
-											<a href="restaurants.html">Restaurants</a>
-											<a href="restaurant-card.html">Restaurant Card</a>
-											<a href="checkout.html">Checkout</a>
+											<a href="restaurants">Restaurants</a>
+											<a href="restaurantcard">Restaurant Card</a>
+											<a href="checkout">Checkout</a>
 										  </div>
 										</li>
 									  </ul>
@@ -127,15 +123,15 @@
 							
 							<li class="nav-item dropdown  header-profile">
 								<a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
-									<img src="images/avatar/profile-1.jpg" width="56" alt=""/>
+									<img src="user/images/avatar/profile-1.jpg" width="56" alt=""/>
 								</a>
 								<div class="dropdown-menu dropdown-menu-end">
-									<a href="app-profile.html" class="dropdown-item ai-icon">
+									<a href="userprofile" class="dropdown-item ai-icon">
 										<svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
 										<span class="ms-2">Profile </span>
 									</a>
 								
-									<a href="../login.html" class="dropdown-item ai-icon">
+									<a href="../login" class="dropdown-item ai-icon">
 										<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
 										<span class="ms-2">Logout </span>
 									</a>
@@ -163,8 +159,8 @@
 						</a>
                        
 						<ul aria-expanded="false">
-							<li><a href="app-profile.html">Profile</a></li>
-							<li><a href="order-page-list.html">Orders</a></li>
+							<li><a href="userprofile">Profile</a></li>
+							<li><a href="userorderpage">Orders</a></li>
 						</ul>
 
                     </li>

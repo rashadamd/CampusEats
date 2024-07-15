@@ -60,7 +60,7 @@
 			<div class="row align-items-center">
 				<div class="col-xl-2">
 					<div class="header-style">
-						<a href="index.html">
+						<a href="userindex">
 							<svg xmlns="http://www.w3.org/2000/svg" width="220" height="38" viewBox="0 0 220 38">
 								<g id="Logo-w" transform="translate(-260 -51)">
 									<g id="Logo-2-w" data-name="Logo-w" transform="translate(260 51)">
@@ -81,7 +81,7 @@
 						</a>
 
 						<div class="extras bag">
-	           				<a href="checkout.html" class="menu-btn"><i class="fa-solid fa-bag-shopping"></i></a>
+	           				<a href="checkout" class="menu-btn"><i class="fa-solid fa-bag-shopping"></i></a>
 		                		<div class="bar-menu"><i class="fa-solid fa-bars"></i></div>
 						</div>
 					</div>
@@ -92,17 +92,17 @@
 					<nav class="navbar">
 				      <ul class="navbar-links">
 				        <li class="navbar-dropdown {{ Request::is('userindex') ? 'active' : '' }} ">
-				          <a href="index.html">Home</a>
+				          <a href="userindex">Home</a>
 				        </li>
 				        <li class="navbar-dropdown {{ Request::is('userabout') ? 'active' : '' }} ">
-				          <a href="userabout.html">About Us</a>
+				          <a href="userabout">About Us</a>
 				        </li>
 				        <li class="navbar-dropdown {{ Request::is('restaurants') ? 'active' : '' }} ">
-				          <a href="index.html#">Restaurants</a>
+				          <a href="restaurants">Restaurants</a>
 				          <div class="dropdown">
-				            <a href="restaurants.html">Restaurants</a>
-				            <a href="restaurant-card.html">Restaurant Card</a>
-				            <a href="checkout.html">Checkout</a>
+				            <a href="restaurants">Restaurants</a>
+				            <a href="restaurantcard">Restaurant Card</a>
+				            <a href="checkout">Checkout</a>
 				          </div>
 				        </li>
 				      </ul>
@@ -114,15 +114,15 @@
 						 
 						<li class="nav-item dropdown  header-profile" >
 							<a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
-								<img src="images/avatar/profile-1.jpg" width="56" alt=""/>
+								<img src="user/images/avatar/profile-1.jpg" width="56" alt=""/>
 							</a>
 							<div class="dropdown-menu dropdown-menu-end">
-								<a href="app-profile.html" class="dropdown-item ai-icon">
+								<a href="userprofile" class="dropdown-item ai-icon">
 									<svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
 									<span class="ms-2">Profile </span>
 								</a>
 							
-								<a href="../login.html" class="dropdown-item ai-icon">
+								<a href="../login" class="dropdown-item ai-icon">
 									<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
 									<span class="ms-2">Logout </span>
 								</a>
@@ -136,7 +136,7 @@
 
 
             <div class="res-log">
-            	<a href="index.html">
+            	<a href="userindex">
                 <svg xmlns="http://www.w3.org/2000/svg" width="220" height="38" viewBox="0 0 220 38">
                 <g id="Logo-w" transform="translate(-260 -51)">
                   <g id="Logo-2-w" data-name="Logo-w" transform="translate(260 51)">
@@ -159,18 +159,18 @@
           	</div>
 			<ul>
 
-				  <li><a href="index.html">Home</a>
+				  <li><a href="userindex">Home</a>
 				  </li>
 
-				  <li><a href="userabout.html">About Us</a></li>
+				  <li><a href="userabout">About Us</a></li>
 
                   <li class="menu-item-has-children"><a href="JavaScript:void(0)">Restaurants</a>
 
 					<ul class="sub-menu">
 
-                      <li><a href="restaurants.html">Restaurants</a></li>
-				      <li><a href="restaurant-card.html">Restaurant Card</a></li>
-				      <li><a href="checkout.html">Checkout</a></li>
+                      <li><a href="restaurants">Restaurants</a></li>
+				      <li><a href="restaurantcard">Restaurant Card</a></li>
+				      <li><a href="checkout">Checkout</a></li>
                     </ul>
 
                    </li>
@@ -190,7 +190,7 @@
 				<div class="row">
 					<div class="col-lg-5 col-md-6 col-sm-12">
 						<div class="footer-description">
-							<a href="index.html">
+							<a href="userindex">
 								<svg xmlns="http://www.w3.org/2000/svg" width="220" height="38" viewBox="0 0 220 38">
 					<g id="Logo-w" transform="translate(-260 -51)">
 					  <g id="Logo-2-w" data-name="Logo-w" transform="translate(260 51)">
@@ -218,9 +218,9 @@
 						<div class="menu">
 							<h4>Menu</h4>
 							<ul class="footer-menu">
-								<li><a href="userindex.html">Home<i class="fa-solid fa-arrow-right"></i></a></li>
-								<li><a href="userabout.html">About us<i class="fa-solid fa-arrow-right"></i></a></li>
-								<li><a href="restaurants.html">Restaurants<i class="fa-solid fa-arrow-right"></i></a></li>
+								<li><a href="userindex.">Home<i class="fa-solid fa-arrow-right"></i></a></li>
+								<li><a href="userabout">About us<i class="fa-solid fa-arrow-right"></i></a></li>
+								<li><a href="restaurants">Restaurants<i class="fa-solid fa-arrow-right"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -235,17 +235,17 @@
 							<a href="callto:+94799999999"><i class="fa-solid fa-phone"></i>+94 79 999 9999</a>
 						</div>
 						<ul class="social-media">
-								<li><a href="index.html#"><i class="fa-brands fa-facebook-f"></i></a></li>
-								<li><a href="index.html#"><i class="fa-brands fa-instagram"></i></a></li>
-								<li><a href="index.html#"><i class="fa-brands fa-twitter"></i></a></li>
+								<li><a href="userindex"><i class="fa-brands fa-facebook-f"></i></a></li>
+								<li><a href="userindex"><i class="fa-brands fa-instagram"></i></a></li>
+								<li><a href="userindex"><i class="fa-brands fa-twitter"></i></a></li>
 							</ul>
 					</div>
 				</div>
 				<div class="footer-two gap no-bottom">
 					<p>Copyright © 2024. CampusEats. All rights reserved.</p>
 					<div class="privacy">
-						<a href="index.html#">Privacy Policy</a>
-						<a href="index.html#">Terms & Services</a>
+						<a href="userindex">Privacy Policy</a>
+						<a href="userindex">Terms & Services</a>
 					</div>
 				</div>
 			</div>

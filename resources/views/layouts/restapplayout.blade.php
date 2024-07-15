@@ -75,12 +75,10 @@
 
         <div class="nav-header">
 
-            <a href="index-2.html" class="brand-logo">
+            <a href="dashboard" class="brand-logo">
 				<img src="restaurant/images/logo.png" alt="CEATS" srcset="" class="logo-abbr" width="100" height="30" >
 				<img src="restaurant/images/title.png" alt="" srcset="" class="brand-title" width="250" height="35" >
 
-				
-			
             </a>
 
             <div class="nav-control">
@@ -103,12 +101,6 @@
                 <nav class="navbar navbar-expand">
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
-							<!-- <div class="nav-item">
-								<div class="input-group search-area">
-									<input type="text" class="form-control" placeholder="Search here">
-									<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
-								</div>
-							</div> -->
 							
 							
 
@@ -128,7 +120,7 @@
 											<li>
 												<div class="timeline-panel">
 													<div class="media me-2">
-														<img alt="image" width="50" src="images/avatar/1.jpg">
+														<img alt="image" width="50" src="restaurant/images/avatar/1.jpg">
 													</div>
 													<div class="media-body">
 														<h6 class="mb-1">Dr sultads Send you Photo</h6>
@@ -143,15 +135,15 @@
 							
 							<li class="nav-item dropdown  header-profile">
 								<a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
-									<img src="images/avatar/profile-1.jpg" width="56" alt=""/>
+									<img src="restaurant/images/avatar/profile-1.jpg" width="56" alt=""/>
 								</a>
 								<div class="dropdown-menu dropdown-menu-end">
-									<a href="app-profile.html" class="dropdown-item ai-icon">
+									<a href="profile" class="dropdown-item ai-icon">
 										<svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
 										<span class="ms-2">Profile </span>
 									</a>
 								
-									<a href="page-login.html" class="dropdown-item ai-icon">
+									<a href="login" class="dropdown-item ai-icon">
 										<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
 										<span class="ms-2">Logout </span>
 									</a>
@@ -178,10 +170,10 @@
 							<span class="nav-text">Dashboard</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a href="index-2.html">Dashboard </a></li>
-							<li><a href="order-page-list.html">Orders</a></li>
+							<li><a href="dashboard">Dashboard </a></li>
+							<li><a href="orderpage">Orders</a></li>
 							
-							<li><a href="review.html">Review</a></li>	
+							<li><a href="review">Review</a></li>	
 						</ul>
 
                     </li>
@@ -190,13 +182,13 @@
 							<span class="nav-text">Apps</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="app-profile.html">Profile</a></li>
+                            <li><a href="profile">Profile</a></li>
 							
                 
 							<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Shop</a>
                                 <ul aria-expanded="false">
-                                    <li><a href="ecom-product-grid.html">Product Grid</a></li>
-									<li><a href="ecom-product-order.html">Order</a></li>
+                                    <li><a href="productgrid">Product Grid</a></li>
+									<li><a href="productorder">Order</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -205,7 +197,7 @@
                     
                 </ul>
 				<div class="plus-box">
-					<img src="images/plus.png" alt="">
+					<img src="restaurant/images/plus.png" alt="">
 					<h5 class="fs-18 font-w700">Add Menus</h5>
 					<p class="fs-14 font-w400">Manage your food <br>and beverages menus<i class="fas fa-arrow-right ms-3"></i></p>
 				</div>
