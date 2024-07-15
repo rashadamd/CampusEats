@@ -12,7 +12,7 @@
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- PAGE TITLE HERE -->
-	<title>CampusEats Restaurant Panel</title>
+	<title>@yield('title','CampusEats-Restaurant-Layout')</title>
 	
 	<!-- FAVICONS ICON -->
 	<link rel="shortcut icon" type="image/png" href="restaurant/images/favicon.png" />
