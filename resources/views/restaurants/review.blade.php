@@ -14,17 +14,9 @@
 				</div>	
 				<div class="d-flex justify-content-between align-items-center mb-5 flex-wrap">
 					<div class="customer-search mb-2">
-						<!-- <div class="input-group search-area">
-							<input type="text" class="form-control" placeholder="Search here......">
-							<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
-						</div> -->
+						
 					</div>
-					<!-- <div class="d-flex align-items-center flex-wrap">
-						<a href="javascript:void(0);" class="btn btn-success light border-success btn-rounded me-2  mb-2"><i class="far fa-check-circle me-2"></i>PUBLISH</a>
-						<a href="javascript:void(0);" class="btn btn-danger light border-danger btn-rounded me-2 mb-2"><i class="far fa-times-circle me-2"></i>DELETE</a>
-						<a href="javascript:void(0);" class="btn bg-white btn-rounded me-3 mb-2"><i class="fas fa-calendar-times me-2 text-primary"></i>Filter<i class="fas fa-chevron-down ms-2 text-primary"></i></a>
-						<a href="javascript:void(0);" class="btn btn-secondary btn-rounded mb-2"><i class="fas fa-sync"></i></a>
-					</div> -->
+					
 				</div>
 				<div class="row">
 					<div class="col-xl-12">
