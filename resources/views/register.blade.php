@@ -28,7 +28,17 @@
 				<div class="offset-xl-3 col-xl-6 col-lg-12" data-aos="flip-up"  data-aos-delay="300" data-aos-duration="400">
 					<form class="checkout-form">
 						<h4>Register Here</h4>
-						<input type="text" name="Name" placeholder="Full Name">
+						
+						<select name="client" id="client" type="clientdrop">
+							<option value="restaurant" >Restaurant</option>
+							<option value="user" >User</option>
+						</select>
+
+						<input type="text" name="Name" placeholder="Enter the Name">
+
+						<input type="text" name="Address" placeholder="Address">
+						<input type="text" name="E-mail" placeholder="E-mail">
+
 						<div class="row">
 							<div class="col-lg-6">
 								<input type="text" name="Uname" placeholder="Username">
@@ -37,9 +47,6 @@
 								<input type="password" name="Password" placeholder="Password">
 							</div>
 						</div>
-						<input type="text" name="E-mail" placeholder="E-mail">
-						<input type="text" name="Address" placeholder="Address">
-
 						
                 			<button class="button-price">Register</button><br><br>
                 			<h6 style="text-align: center;">Already a member? <a href="/login" style="color:#f29f05"> Login Now</a></h6>
