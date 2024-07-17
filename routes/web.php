@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-
 // temp view file
 Route::view('/lay1','layouts.applayout');
 Route::view('/lay2','layouts.restapplayout');
@@ -22,7 +21,6 @@ Route::view('/orderpage','restaurants.order-page');
 Route::view('/productorder','restaurants.product-order');
 Route::view('/productgrid','restaurants.product-grid');
 Route::view('/review','restaurants.review');
-
 
 //user
 Route::view('/checkout','user.checkout');

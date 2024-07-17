@@ -2639,7 +2639,8 @@ form.checkout-form h4.two{
 form.checkout-form input[type="text"],
 form.checkout-form input[type="number"],
 form.checkout-form input[type="password"],
-form.checkout-form select[type="clientdrop"]
+form.checkout-form select[type="clientdrop"],
+form.checkout-form input[type="file"]
 
 {
     width: 100%;

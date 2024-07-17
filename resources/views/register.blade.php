@@ -33,10 +33,11 @@
 							<option value="restaurant" >Restaurant</option>
 							<option value="user" >User</option>
 						</select>
-
+						
+						<input type="file">
 						<input type="text" name="Name" placeholder="Enter the Name">
-
 						<input type="text" name="Address" placeholder="Address">
+						<input type="text" name="mobileno" placeholder="Mobile Number">
 						<input type="text" name="E-mail" placeholder="E-mail">
 
 						<div class="row">
