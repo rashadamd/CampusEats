@@ -1,0 +1,36 @@
+in CMD
+composer create-project laravel/laravel "name of the proj"
+
+1. database connection
+2. models and migration
+3. controller
+4. view
+5. routing
+
+
+model name singular (User) table name plural(users)
+
+migration file to dsign table
+
+save the user into database
+create db phpmyadmin
+1. in .env change DB_DATABASE name APP_NAME
+2. model name singular (User) table name plural(users)
+
+php artisan make:model User -m ==== creating model witrh migration
+
+create table ----------- php artisan migrate
+	if error
+		php artisan migrate:refresh
+
+
+php artisan serve ----------------- for activate server run proj
+php artisan make:controller UserController ------------ to create controller
+
+
+
+
+
+
+
+

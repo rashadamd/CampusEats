@@ -1,0 +1,147 @@
+
+new project----
+	composer create-project laravel/laravel complaints
+
+
+
+Complaints
+
+	Users
+		id
+		name 
+		email
+		password
+
+	Complaints
+		id
+		user_id
+		heading
+		description
+		date
+
+2. run the server 
+	php artisan serve
+
+3. create database
+
+4. migrations --users editing the specific table(USERS TABLE)Schema::create('complaints', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('user_id')->references('id')->on('users');
+            $table->string('heading');
+            $table->string('description');
+            $table->date('date');
+            $table->timestamps();
+        });
+	 Schema::create('users', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->rememberToken();
+            $table->timestamps();
+        });
+		
+
+5. creating model using migration ---------- 
+	php artisan make:model Complaint -m
+	
+6. editing in table for created model (Complaints)database>migrartions
+
+	Schema::create('complaints', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('user_id')->references('id')->on('users');
+            $table->string('heading');
+            $table->string('description');
+            $table->date('date');
+            $table->timestamps();
+        });
+	
+
+7.Creating Relationship
+	hasmany, belongsto
+	in Models
+	User Model
+		protected function complaints():HasMany {
+        return $this->hasMany(Complaint::class);
+		}
+	
+	Complaint Model
+		protected function users(): BelongsTo {
+            return $this->belongsTo(User::class);
+		}
+	
+	
+8. connectr the DATABASE -
+	change DTABASE NAME and APPNAME in .env
+	
+9. php artisan migrate
+
+10. resources>>view
+	creating layout 
+		layout.blade.php	
+			<title>@yield(title('title','Complaints System'))</title>
+			
+			<body>@yield('content')</body>
+		
+		this a template for the whole website
+11. create another page>>
+		then extends
+				
+			@extends('layout')
+			@section('title','welcome')
+			@section('content')
+
+			//writing the html code without anything only using tags
+			
+			@endsection
+
+12. web.php in routes
+			
+		Route::view('/','index')->name('home');
+
+13. creating Usercontroller 
+		php artisan make:controller UserController
+		
+14. created usercontroller:
+
+15. Insert function in user controller
+	protected function register(Request $req){
+        $req->validate([
+            'name' => 'required|max:20',
+            'email' => 'required|unique:users',
+            'password' => 'required|min:8',
+        ]);
+
+        $data['name']=$req->name;
+        $data['email']=$req->email;
+        $data['password']=Hash::make($req->password);
+
+        //inserting data 
+
+       // $user=User::insert($data);//procedural 
+
+        $user=User::create($data);//updated once using elocuant
+
+        if($user){
+            return redirect(route('home'))->with('Status','Registetred');
+        }else{
+            return redirect(route('home'))->with('Status','Failed');
+        }
+
+
+    }
+
+16. create route in WEB
+	Route::view('/','index')->name('home');
+	Route::post('/register',[UserController::class,'register']);
+	
+17. create another view for login
+
+
+
+
+
+
+
+
+
