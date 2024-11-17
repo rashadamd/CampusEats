@@ -78,7 +78,6 @@
             <a href="dashboard" class="brand-logo">
 				<img src="restaurant/images/logo.png" alt="CEATS" srcset="" class="logo-abbr" width="100" height="30" >
 				<img src="restaurant/images/title.png" alt="" srcset="" class="brand-title" width="250" height="35" >
-
             </a>
 
             <div class="nav-control">
@@ -135,7 +134,7 @@
 							
 							<li class="nav-item dropdown  header-profile">
 								<a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
-									<img src="restaurant/images/avatar/profile-1.jpg" width="56" alt=""/>
+									<img src="{{ asset('storage/'.$user->image) }}" width="56" alt=""/>
 								</a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="profile" class="dropdown-item ai-icon">

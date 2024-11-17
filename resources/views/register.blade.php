@@ -26,36 +26,85 @@
 			<div class="row">
 				
 				<div class="offset-xl-3 col-xl-6 col-lg-12" data-aos="flip-up"  data-aos-delay="300" data-aos-duration="400">
-					<form class="checkout-form">
+					<form class="checkout-form" action="{{ route('registerpost') }}" method="POST" enctype="multipart/form-data">
+					@csrf
 						<h4>Register Here</h4>
 						
 						<select name="client" id="client" type="clientdrop">
 							<option value="restaurant" >Restaurant</option>
 							<option value="user" >User</option>
 						</select>
+
+						@if($errors->has('client'))
+							<span class="error" style="color: red">
+								<strong>{{$errors->first('client')}}</strong>
+							</span>
+                        @endif
 						
-						<input type="file">
-						<input type="text" name="Name" placeholder="Enter the Name">
-						<input type="text" name="Address" placeholder="Address">
+						<input type="file" name="image" class="form-control">
+						@if($errors->has('image'))
+							<span class="error" style="color: red">
+								<strong>{{ $errors->first('image') }}</strong>
+							</span>
+						@endif
+
+						<input type="text" name="name" placeholder="Enter the Name">
+						@if($errors->has('name'))
+							<span class="error" style="color: red">
+								<strong>{{ $errors->first('name') }}</strong>
+							</span>
+						@endif
+
+						<input type="text" name="address" placeholder="Address">
+						@if($errors->has('address'))
+							<span class="error" style="color: red">
+								<strong>{{ $errors->first('address') }}</strong>
+							</span>
+						@endif
+
+
 						<input type="text" name="mobileno" placeholder="Mobile Number">
-						<input type="text" name="E-mail" placeholder="E-mail">
+						@if($errors->has('mobileno'))
+							<span class="error" style="color: red">
+								<strong>{{ $errors->first('mobileno') }}</strong>
+							</span>
+						@endif
+
+						<input type="text" name="email" placeholder="E-mail">
+						@if($errors->has('email'))
+							<span class="error" style="color: red">
+								<strong>{{ $errors->first('email') }}</strong>
+							</span>
+						@endif
 
 						<div class="row">
 							<div class="col-lg-6">
-								<input type="text" name="Uname" placeholder="Username">
+								<input type="text" name="uname" placeholder="Username">
+								@if($errors->has('uname'))
+									<span class="error" style="color: red">
+										<strong>{{ $errors->first('uname') }}</strong>
+									</span>
+								@endif
+							
 							</div>
 							<div class="col-lg-6">
-								<input type="password" name="Password" placeholder="Password">
+								<input type="password" name="password" placeholder="Password">
+								@if($errors->has('password'))
+									<span class="error" style="color: red">
+										<strong>{{ $errors->first('password') }}</strong>
+									</span>
+								@endif
+							
 							</div>
 						</div>
 						
-                			<button class="button-price">Register</button><br><br>
+                			<button class="button-price" type="submit">Register</button><br><br>
                 			<h6 style="text-align: center;">Already a member? <a href="/login" style="color:#f29f05"> Login Now</a></h6>
 					</form>
 				</div>
 			</div>
 		</div>
 	</section>
-	
+
 
 @endsection
