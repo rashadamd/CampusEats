@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('menus', function (Blueprint $table) {
             $table->id('menuid');
-            $table->foreignId('restid')->references('restid')->on('restaurants')->onDelete('cascade');            
-            $table->string('image')->nullable();
+            $table->foreignId('restid')->references('userid')->on('users')->onDelete('cascade');            
+            $table->string('image');
             $table->string('name');
             $table->decimal('price', 8, 2);
             $table->timestamps();

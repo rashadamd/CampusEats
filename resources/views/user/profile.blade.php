@@ -3,15 +3,12 @@
 @section('content')
 
 <div class="container-fluid">
-				
-				
-				
                 <!-- row -->
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="profile card card-body px-3 pt-3 pb-0">
                             <div class="profile-head">
-                                
+
                                 <div class="profile-info">
 									<div class="profile-photo">
 										<img src="{{ asset('storage/'.$user->image) }}" class="img-fluid rounded-circle" alt="">
@@ -32,11 +29,8 @@
                     </div>
                 </div>
 
-
-
                 <div class="row">
-                   
-                  
+                                
 					<div class="col-xl-12">
                         <div class="card">
                             <div class="card-body">
@@ -48,11 +42,8 @@
                                             
                                         </ul>
 
-
-
                                         <div class="tab-content">
                                             
-
                                             <div id="about-me" class="tab-pane fade active show">
                                               
 												<BR></BR>
@@ -76,7 +67,6 @@
                                                         </div>
                                                     </div>
                                                     
-                                                    
                                                     <div class="row mb-2">
                                                         <div class="col-sm-3 col-5">
                                                             <h5 class="f-w-500">Location <span class="pull-end">:</span></h5>
@@ -88,11 +78,9 @@
                                                 </div>
                                             </div>
 
-                                            
                                         </div>
                                     </div>
 									
-
                                 </div>
                             </div>
                         </div>

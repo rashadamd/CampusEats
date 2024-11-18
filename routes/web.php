@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\MenuController;
 use App\Http\Controllers\RestaurantController;
 use Illuminate\Support\Facades\Route;
 
@@ -45,6 +46,8 @@ Route::post('/loginpost', [UserController::class, 'login'])->name('loginpost');
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register');
 
+
+
 Route::middleware('auth')->group(function () {
     Route::get('/userindex', [UserController::class, 'userindex'])->name('userindex');
     Route::get('/userprofile', [UserController::class, 'profile'])->name('userprofile');
@@ -56,4 +59,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/productorder', [RestaurantController::class, 'productorder'])->name('productorder');
     Route::get('/review', [RestaurantController::class, 'review'])->name('review');
 
+
+    Route::post('/menupost', [MenuController::class, 'store'])->name('menupost');
+    Route::get('/menu', [MenuController::class, 'menu'])->name('menu');
+
 });
+

@@ -22,6 +22,7 @@ class RestaurantController extends Controller
     {
 
         $user = Auth::user();
+        // dd($user['userid']);
        // dd($user);
         return view('restaurants/profile',compact('user'));
     }
@@ -38,7 +39,7 @@ class RestaurantController extends Controller
     {
 
         $user = Auth::user();
-       // dd($user);
+    //    dd($user['id']);
         return view('restaurants/product-grid',compact('user'));
     }
 
@@ -56,6 +57,13 @@ class RestaurantController extends Controller
         $user = Auth::user();
        // dd($user);
         return view('restaurants/review',compact('user'));
+    }
+    public function menu()
+    {
+
+        $user = Auth::user();
+       // dd($user);
+        return view('restaurants/menu',compact('user'));
     }
 
 }

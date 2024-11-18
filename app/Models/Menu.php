@@ -17,8 +17,9 @@ class Menu extends Model
 
     public function restaurant()
     {
-        return $this->belongsTo(Restaurant::class, 'restid');
+        return $this->belongsTo(User::class, 'restid')->where('client', 'restaurant');
     }
+
     public function orderItems()
     {
         return $this->hasMany(OrderItem::class, 'menuid');
