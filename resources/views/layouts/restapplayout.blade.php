@@ -186,7 +186,7 @@
                 
 							<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Shop</a>
                                 <ul aria-expanded="false">
-                                    <li><a href="productgrid">Product Grid</a></li>
+                                    <li><a href="menuview">Product Grid</a></li>
 									<li><a href="productorder">Order</a></li>
                                 </ul>
                             </li>

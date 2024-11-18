@@ -14,17 +14,7 @@
 								</ul>
 								<h2 style="color: #fff;">Restaurants</h2>
 								<p>Egestas sed tempus urna et pharetra pharetra massa. Fermentum posuere urna nec tincidunt praesent semper.</p>
-								<div class="restaurant">
-									<div class="nice-select-one">
-										<select class="nice-select Advice">
-										  <option>Choose a Restaurant</option>
-										  <option>Choose a Restaurant 1</option>
-										  <option>Choose a Restaurant 2</option>
-										  <option>Choose a Restaurant 3</option>
-										  <option>Choose a Restaurant 4</option>
-									</select>
-									</div>
-								</div>
+								
 							</div>
 						</div>
 						<div class="col-lg-6" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="400">
@@ -45,48 +35,18 @@
 	<section class="best-restaurants gap">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6" data-aos="flip-up"  data-aos-delay="200" data-aos-duration="300">
-					<div class="logos-card restaurant-page ">
-						<img alt="logo" src="user/assets/img/logos-2.jpg">
+				
+				@foreach($restaurants as $restaurant)
+					<div class="col-lg-6" data-aos="flip-up" data-aos-delay="300" data-aos-duration="400">
+						<div class="logos-card restaurant-page" style="margin: 10px;">
+						<img src="{{ asset('storage/' . $restaurant->image) }}" alt="logo" width="125" height="125">
 							<div class="cafa">
-								<h4><a href="restaurantcard">Kennington Lane Cafe</a></h4>
-								<div>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<div class="cafa-button">
-										<a href="restaurantcard">american</a>
-										<a href="restaurantcard">steakhouse</a>
-										<a class="end" href="restaurantcard">seafood</a>
-								</div>
-								<p>Non enim praesent elementum facilisis leo vel fringilla. Lectus proin nibh nisl condimentum id. Quis varius quam quisque id diam vel.</p>
+								<h4><a href="restaurants-card-{{$restaurant->userid}}">{{ $restaurant->name }}</a></h4>
+								<p>{{ $restaurant->address }}</p>
 							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-6" data-aos="flip-up"  data-aos-delay="300" data-aos-duration="400">
-					<div class="logos-card restaurant-page">
-						<img alt="logo" src="user/assets/img/logos-1.jpg">
-							<div class="cafa">
-								<h4><a href="restaurantcard">The Wilmington</a></h4>
-								<div>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-								</div>
-								<div class="cafa-button">
-										<a href="restaurantcard">american</a>
-										<a href="restaurantcard">steakhouse</a>
-										<a class="end" href="restaurantcard">seafood</a>
-								</div>
-								<p>Vulputate enim nulla aliquet porttitor lacus luctus. Suscipit adipiscing bibendum est ultricies integer. Sed adipiscing diam donec adipiscing tristique.</p>
-							</div>
-					</div>
-				</div>
+				@endforeach
 				
 			</div>
 		</div>

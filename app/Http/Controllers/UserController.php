@@ -11,8 +11,6 @@ use Illuminate\Support\Facades\Validator;
 class UserController extends Controller
 {
 
-    
-
         public function userindex()
         {
             $user = Auth::user();
@@ -25,6 +23,32 @@ class UserController extends Controller
             $user = Auth::user();
         // dd($user);
             return view('user.profile',compact('user'));
+        }
+        
+        public function orderpage()
+        {
+            $user = Auth::user();
+            return view('user.order-page',compact('user'));
+        }
+        public function checkout()
+        {
+            $user = Auth::user();
+            return view('user.checkout',compact('user'));
+        }
+        public function userabout()
+        {
+            $user = Auth::user();
+            return view('user.userabout',compact('user'));
+        }
+        public function restaurantcard()
+        {
+            $user = Auth::user();
+            return view('user.restaurant-card',compact('user'));
+        }
+        public function restaurants()
+        {
+            $user = Auth::user();
+            return view('user.restaurants',compact('user'));
         }
 
 

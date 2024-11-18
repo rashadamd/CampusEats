@@ -82,69 +82,21 @@
 							<p>Magna sit amet purus gravida quis blandit turpis cursus. Venenatis tellus in metus vulputate.</p>
 						</div>
 				</div>
-				<div class="col-lg-6" data-aos="flip-up"  data-aos-delay="300" data-aos-duration="400">
-					<div class="logos-card restaurant-page">
-						<img alt="logo" src="user/assets/img/logos-2.jpg">
+
+
+				@foreach($restaurants as $restaurant)
+					<div class="col-lg-6" data-aos="flip-up" data-aos-delay="300" data-aos-duration="400">
+						<div class="logos-card restaurant-page" style="margin: 10px;">
+						<img src="{{ asset('storage/' . $restaurant->image) }}" alt="logo" width="125" height="125">
 							<div class="cafa">
-								<h4><a href="restaurantcard">Kennington Lane Cafe</a></h4>
-								<div>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<div class="cafa-button">
-										<a href="restaurantcard">american</a>
-										<a href="restaurantcard">steakhouse</a>
-										<a class="end" href="restaurantcard">seafood</a>
-								</div>
-								<p>Non enim praesent elementum facilisis leo vel fringilla. Lectus proin nibh nisl condimentum id. Quis varius quam quisque id diam vel.</p>
+								<h4><a href="{{ route('restaurants', $restaurant->id) }}">{{ $restaurant->name }}</a></h4>
+								<p>{{ $restaurant->address }}</p>
 							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-6" data-aos="flip-up"  data-aos-delay="400" data-aos-duration="500">
-					<div class="logos-card two restaurant-page">
-						<img alt="logo" src="user/assets/img/logos-1.jpg">
-							<div class="cafa">
-								<h4><a href="restaurantcard">The Wilmington</a></h4>
-								<div>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-								</div>
-								<div class="cafa-button">
-										<a href="restaurantcard">american</a>
-										<a href="restaurantcard">steakhouse</a>
-										<a class="end" href="restaurantcard">seafood</a>
-								</div>
-								<p>Vulputate enim nulla aliquet porttitor lacus luctus. Suscipit adipiscing bibendum est ultricies integer. Sed adipiscing diam donec adipiscing tristique.</p>
-							</div>
-					</div>
-				</div>
-				<div class="col-lg-6" data-aos="flip-up"  data-aos-delay="500" data-aos-duration="600">
-					<div class="logos-card three restaurant-page">
-						<img alt="logo" src="user/assets/img/logos-3.jpg">
-							<div class="cafa">
-								<h4><a href="restaurantcard">Kings Arms</a></h4>
-								<div>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star-half-stroke"></i>
-								</div>
-								<div class="cafa-button">
-										<a href="restaurantcard">healthy</a>
-										<a href="restaurantcard">steakhouse</a>
-										<a class="end" href="restaurantcard">vegetarian</a>
-								</div>
-								<p>Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique.</p>
-							</div>
-					</div>
-				</div>
+				@endforeach
+				
+				
 			</div>
 			<div class="button-gap">
 				<a href="restaurants" class="button button-2 non">See All<i class="fa-solid fa-arrow-right"></i></a>

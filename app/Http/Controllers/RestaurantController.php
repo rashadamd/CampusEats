@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Menu;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -40,7 +41,7 @@ class RestaurantController extends Controller
 
         $user = Auth::user();
     //    dd($user['id']);
-        return view('restaurants/product-grid',compact('user'));
+        return view('restaurants.product-grid',compact('user'));
     }
 
     public function productorder()
@@ -58,6 +59,8 @@ class RestaurantController extends Controller
        // dd($user);
         return view('restaurants/review',compact('user'));
     }
+
+
     public function menu()
     {
 
@@ -65,5 +68,4 @@ class RestaurantController extends Controller
        // dd($user);
         return view('restaurants/menu',compact('user'));
     }
-
 }

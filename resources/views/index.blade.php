@@ -19,7 +19,7 @@
 							<p>Revolutionize your campus dining experience with our mouthwatering food delivery service! </p>
 							
 							<div class="nice-select-one">
-								<a href="login.html" class="button button-2">Order Now</a>
+								<a href="login" class="button button-2">Order Now</a>
 							</div>
 					</div>
 				</div>
@@ -30,7 +30,7 @@
 						<div class="wilmington location-restaurant" style="top: 30%; left: 70%;">
 							<i class="fa-solid fa-location-dot"></i>
 							<div>
-								<h6>12 Restaurant</h6>
+								<h6>Restaurants</h6>
 								<p>In Your city</p>
 							</div>
 						</div>
@@ -82,76 +82,37 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6" data-aos="flip-up"  data-aos-delay="200" data-aos-duration="300">
 						<div class="city-restaurants">
-							<h2>12 <span style="color: #f5ae47;"> Best </span> <span style="color: #f65f5f;"> Restaurants  </span> in Your City</h2>
-							<p>Magna sit amet purus gravida quis blandit turpis cursus. Venenatis tellus in metus vulputate.</p>
+							<h2></span> <span style="color: #f65f5f;"> Restaurants  </span> in Your City</h2>
 						</div>
 				</div>
-				<div class="col-lg-6" data-aos="flip-up"  data-aos-delay="300" data-aos-duration="400">
+
+				<!-- <div class="col-lg-6" data-aos="flip-up"  data-aos-delay="300" data-aos-duration="400">
 					<div class="logos-card restaurant-page">
 						<img alt="logo" src="assets/img/logos-2.jpg">
 							<div class="cafa">
-								<h4><a href="restaurant-card.html">Kennington Lane Cafe</a></h4>
-								<div>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<div class="cafa-button">
-										<a href="index.html#">american</a>
-										<a href="index.html#">steakhouse</a>
-										<a class="end" href="index.html#">seafood</a>
-								</div>
-								<p>Non enim praesent elementum facilisis leo vel fringilla. Lectus proin nibh nisl condimentum id. Quis varius quam quisque id diam vel.</p>
+								<h4><a href="login">Kennington Lane Cafe</a></h4>
+								<p>Address</p>
 							</div>
 					</div>
-				</div>
-				<div class="col-lg-6" data-aos="flip-up"  data-aos-delay="400" data-aos-duration="500">
-					<div class="logos-card two restaurant-page">
-						<img alt="logo" src="assets/img/logos-1.jpg">
+				</div> -->
+
+				@foreach ($restaurants as $restaurant)
+					<div class="col-lg-6" data-aos="flip-up" data-aos-delay="300" data-aos-duration="400" >
+						<div class="logos-card restaurant-page" style="margin: 10px;">
+							<!-- Assuming 'image' field contains the path to the restaurant's logo -->
+							<img alt="logo" src="{{ asset('storage/' . $restaurant->image) }}" class="img-fluid" style="width: 150px; height: 150px; object-fit: cover;">
 							<div class="cafa">
-								<h4><a href="restaurant-card.html">The Wilmington</a></h4>
-								<div>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-								</div>
-								<div class="cafa-button">
-										<a href="index.html#">american</a>
-										<a href="index.html#">steakhouse</a>
-										<a class="end" href="index.html#">seafood</a>
-								</div>
-								<p>Vulputate enim nulla aliquet porttitor lacus luctus. Suscipit adipiscing bibendum est ultricies integer. Sed adipiscing diam donec adipiscing tristique.</p>
+								<h4><a href="{{ route('login') }}">{{ $restaurant->name }}</a></h4>
+								<p>{{ $restaurant->address }}</p> <!-- Assuming 'address' is a field -->
 							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-6" data-aos="flip-up"  data-aos-delay="500" data-aos-duration="600">
-					<div class="logos-card three restaurant-page">
-						<img alt="logo" src="assets/img/logos-3.jpg">
-							<div class="cafa">
-								<h4><a href="restaurant-card.html">Kings Arms</a></h4>
-								<div>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star-half-stroke"></i>
-								</div>
-								<div class="cafa-button">
-										<a href="index.html#">healthy</a>
-										<a href="index.html#">steakhouse</a>
-										<a class="end" href="index.html#">vegetarian</a>
-								</div>
-								<p>Tortor at risus viverra adipiscing at in tellus. Cras semper auctor neque vitae tempus. Dui accumsan sit amet nulla facilisi. Sed adipiscing diam donec adipiscing tristique.</p>
-							</div>
-					</div>
-				</div>
+				@endforeach
+				
+				
 			</div>
 			<div class="button-gap">
-				<a href="login.html" class="button button-2 non">See All<i class="fa-solid fa-arrow-right"></i></a>
+				<a href="login" class="button button-2 non">See All<i class="fa-solid fa-arrow-right"></i></a>
 			</div>
 		</div>
 	</section>
@@ -169,7 +130,7 @@
 						<h2 style="color:white;">Food from your favorite restaurants
 								to your table</h2>
 								<p>Pretium lectus quam id leo in vitae turpis massa sed. Lorem donec massa sapien faucibus et molestie. Vitae elementum curabitur vitae nunc.</p>
-								<a href="index.html#" class="button button-2">Order Now</a>
+								<a href="login" class="button button-2">Order Now</a>
 					</div>
 				</div>
 			</div>
