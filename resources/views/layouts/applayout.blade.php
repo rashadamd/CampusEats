@@ -8,6 +8,8 @@
 	
   <!-- CSS only -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	
+	\<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM3MLzO8a4syyIQax0e6Tw74D1G/I5R2KVa8FRd" crossorigin="anonymous">
 
 <!-- owl carousel -->
 
@@ -77,7 +79,7 @@
 						</a>
 
 						<div class="extras bag">
-		                		<div class="bar-menu"><i class="fa-solid fa-bars"></i></div>
+		                		<div class="bar-menu"><i class="fas fa-bars"></i></div>
 						</div>
 					</div>
 				</div>
@@ -196,9 +198,9 @@
 					<div class="menu">
 						<h4>Menu</h4>
 						<ul class="footer-menu">
-							<li><a href="/#">home<i class="fa-solid fa-arrow-right"></i></a></li>
-							<li><a href=" /about">about us<i class="fa-solid fa-arrow-right"></i></a></li>
-							<li><a href="/#restaurants">Restaurants<i class="fa-solid fa-arrow-right"></i></a></li>
+							<li><a href="/#">home<i class="fas fa-arrow-right"></i></a></li>
+							<li><a href=" /about">about us<i class="fas fa-arrow-right"></i></a></li>
+							<li><a href="/#restaurants">Restaurants<i class="fas fa-arrow-right"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -206,16 +208,16 @@
 					<div class="menu contacts">
 						<h4>Contacts</h4>
 						<div class="footer-location">
-							<i class="fa-solid fa-location-dot"></i>
+							<i class="fas fa-location-dot"></i>
 							<p>South Eatsern Uniiversity of Sri Lanka</p>
 						</div>
-						<a href="mailto:campuseats@mail.com"><i class="fa-solid fa-envelope"></i>campuseats@mail.com</a>
-						<a href="callto:+94799999999"><i class="fa-solid fa-phone"></i>+94 79 999 9999</a>
+						<a href="mailto:campuseats@mail.com"><i class="fas fa-envelope"></i>campuseats@mail.com</a>
+						<a href="callto:+94799999999"><i class="fas fa-phone"></i>+94 79 999 9999</a>
 					</div>
 					<ul class="social-media">
-							<li><a href="index"><i class="fa-brands fa-facebook-f"></i></a></li>
-							<li><a href="index"><i class="fa-brands fa-instagram"></i></a></li>
-							<li><a href="index"><i class="fa-brands fa-twitter"></i></a></li>
+							<li><a href="index"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="index"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="index"><i class="fab fa-twitter"></i></a></li>
 						</ul>
 				</div>
 			</div>

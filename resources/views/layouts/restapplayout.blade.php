@@ -13,7 +13,8 @@
 	
 	<!-- PAGE TITLE HERE -->
 	<title>@yield('title','CampusEats-Restaurant-Layout')</title>
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM3MLzO8a4syyIQax0e6Tw74D1G/I5R2KVa8FRd" crossorigin="anonymous">
+
 	<!-- FAVICONS ICON -->
 	<link rel="shortcut icon" type="image/png" href="restaurant/images/favicon.png" />
 	

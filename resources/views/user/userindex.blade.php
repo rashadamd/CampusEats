@@ -25,9 +25,9 @@
 						<img alt="man" src="user/assets/img/photo-1.png">
 				
 						<div class="wilmington location-restaurant" style="top: 30%; left: 70%;">
-							<i class="fa-solid fa-location-dot"></i>
+							<i class="fas fa-location-dot"></i>
 							<div>
-								<h6>12 Restaurant</h6>
+								<h6>Restaurant</h6>
 								<p>In Your city</p>
 							</div>
 						</div>
@@ -99,7 +99,7 @@
 				
 			</div>
 			<div class="button-gap">
-				<a href="restaurants" class="button button-2 non">See All<i class="fa-solid fa-arrow-right"></i></a>
+				<a href="restaurants" class="button button-2 non">See All<i class="fas fa-arrow-right"></i></a>
 			</div>
 		</div>
 	</section>
@@ -173,11 +173,11 @@
 
 									<div>
 										<h6>Thomas Adamson</h6>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
 									</div>
 								</div>
 						</div>
@@ -188,11 +188,11 @@
 
 									<div>
 										<h6>Thomas Adamson</h6>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
 									</div>
 								</div>
 						</div>
@@ -203,11 +203,11 @@
 
 									<div>
 										<h6>Thomas Adamson</h6>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
 									</div>
 								</div>
 						</div>
@@ -217,7 +217,7 @@
 				<div class="col-xl-6 col-lg-12" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="400">
 					<div class="reviews-img">
 						<img alt="photo" src="assets/img/photo-4.png">
-						<i class="fa-regular fa-thumbs-up"></i>
+						<i class="far fa-thumbs-up"></i>
 					</div>
 				</div>
 			</div>
@@ -238,7 +238,7 @@
 					<div class="get-the-menu">
 						<h2>Get the menu of your favorite restaurants every day</h2>
 						<form>
-							<i class="fa-regular fa-bell"></i>
+							<i class="far fa-bell"></i>
 							<input type="text" name="email" placeholder="Enter email address">
 							<button class="button button-2">Subscribe</button>
 						</form>

@@ -10,7 +10,7 @@
 							<div class="about-text">
 								<ul class="crumbs d-flex">
 									<li><a href="userindex">Home</a></li>
-									<li class="two"><a href="restaurants"><i class="fa-solid fa-right-long"></i>Restaurants</a></li>
+									<li class="two"><a href="restaurants"><i class="fas fa-right-long"></i>Restaurants</a></li>
 								</ul>
 								<h2 style="color: #fff;">Restaurants</h2>
 								<p>Egestas sed tempus urna et pharetra pharetra massa. Fermentum posuere urna nec tincidunt praesent semper.</p>
@@ -20,10 +20,9 @@
 						<div class="col-lg-6" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="400">
 							<div class="restaurants-girl-img food-photo-section">
 								<img alt="man" src="user/assets/img/photo-11.png">
-								<a href="restaurantcard" class="one"><i class="fa-solid fa-burger"></i>Burgers</a>
-								<a href="restaurantcard" class="two"><i class="fa-solid fa-drumstick-bite"></i>Chicken</a>
-								<a href="restaurantcard" class="three"><i class="fa-solid fa-cheese"></i>Steaks</a>
-								<a href="restaurantcard" class="for"><i class="fa-solid fa-pizza-slice"></i>Fish</a>
+								<a href="restaurantcard" class="two"><i class="fas fa-drumstick-bite"></i>Chicken</a>
+								<a href="restaurantcard" class="three"><i class="fas fa-cheese"></i>Steaks</a>
+								<a href="restaurantcard" class="for"><i class="fas fa-pizza-slice"></i>Fish</a>
 							</div>
 						</div>
 					</div>
@@ -65,7 +64,7 @@
 					<div class="get-the-menu">
 						<h2>Get the menu of your favorite restaurants every day</h2>
 						<form>
-							<i class="fa-regular fa-bell"></i>
+							<i class="far fa-bell"></i>
 							<input type="text" name="email" placeholder="Enter email address">
 							<button class="button button-2">Subscribe</button>
 						</form>

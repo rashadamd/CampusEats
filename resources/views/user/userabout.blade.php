@@ -1,5 +1,6 @@
 @extends('layouts.userapplayout')
 @section('title','CampusEats - About')
+
 @section('content')
 
 	<!-- hero-section -->
@@ -10,7 +11,7 @@
 					<div class="about-text">
 						<ul class="crumbs d-flex">
 							<li><a href="userindex">Home</a></li>
-							<li class="two"><a href="userabout"><i class="fa-solid fa-right-long"></i> About Us</a></li>
+							<li class="two"><a href="userabout"><i class="fas fa-right-long"></i> About Us</a></li>
 						</ul>
 						<h2 style="color:#fff">Nothing to worry about with Quickeat</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -103,17 +104,17 @@
 						<p>Amet massa vitae tortor condimentum lacinia quis. Elit at imperdiet dui accumsan sit amet nulla facilisi. Lacus laoreet non curabitur gravida arcu ac tortor dignissim.</p>
 						<h6>Interdum varius sit amet mattis.</h6>
 						<ul class="paragraph">
-							<li><i class="fa-solid fa-circle-check"></i><h5>Interdum varius sit amet mattis;</h5></li>
-							<li><i class="fa-solid fa-circle-check"></i><h5>Sed elementum tempus egestas sed sed;</h5></li>
-							<li><i class="fa-solid fa-circle-check"></i><h5>Sit amet purus gravida quis blandit;</h5></li>
-							<li><i class="fa-solid fa-circle-check"></i><h5>Feugiat pretium nibh ipsum consequat nisl vel pretium.</h5></li>
+							<li><i class="fas fa-circle-check"></i><h5>Interdum varius sit amet mattis;</h5></li>
+							<li><i class="fas fa-circle-check"></i><h5>Sed elementum tempus egestas sed sed;</h5></li>
+							<li><i class="fas fa-circle-check"></i><h5>Sit amet purus gravida quis blandit;</h5></li>
+							<li><i class="fas fa-circle-check"></i><h5>Feugiat pretium nibh ipsum consequat nisl vel pretium.</h5></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-lg-6" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="400">
 					<div class="video-section-img">
 						<img alt="elements" src="user/assets/img/elements-1.jpg">
-						<a data-fancybox="" href="https://www.youtube.com/watch?v=CKnGXZxK7zs"><i class="fa-solid fa-play"></i></a>
+						<a data-fancybox="" href="https://www.youtube.com/watch?v=CKnGXZxK7zs"><i class="fas fa-play"></i></a>
 					</div>
 				</div>
 			</div>
@@ -163,103 +164,112 @@
 			</div>
 		</div>
 	</section>
-	<!-- Our Team Section -->
+	
+		<!-- Our Team Section -->
 	<section class="our-team-section gap">
-		<div class="container">
+		<div class="container" style="text-align:center;"> 
 			<div class="hading" data-aos="fade-up"  data-aos-delay="200" data-aos-duration="300">
 				<h2>Our team</h2>
-				<p>Enim lobortis scelerisque fermentum dui faucibus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Magna ac placerat vestibulum lectus mauris.</p>
 			</div>
 			<div class="row">
-				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="200" data-aos-duration="300">
+			<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500" style="margin-bottom: 20px;">
 					<div class="our-team">
-						<img alt="team-img" src="user/assets/img/team-1.png">
-						<h4><a href="#">Kevin Adamson</a></h4>
-						<p>Pellentesque adipiscing commodo
-							elit at imperdiet dui.</p>
+						<img alt="team-img" src="assets/img/1.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4><a href="">Rashad Ahamed</a></h4>
+						<p>At erat pellentesque adipiscing
+								commodo elit.</p>
 							<ul class="social-media">
-								<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-								<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-							</ul>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="400">
-					<div class="our-team">
-						<img alt="team-img" src="user/assets/img/team-2.png">
-						<h4><a href="#">Roxie Gilbert</a></h4>
-						<p>Velit dignissim sodales ut eu sem integer vitae. Interdum varius sit amet mattis.</p>
-							<ul class="social-media">
-								<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-								<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
+								<li><a href=""><i class="fab fa-instagram"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter"></i></a></li>
 							</ul>
 					</div>
 				</div>
 				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
 					<div class="our-team">
-						<img alt="team-img" src="user/assets/img/team-3.png">
-						<h4><a href="#">Edgar Johnson</a></h4>
+					<img alt="team-img" src="assets/img/6.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
+					<h4><a href="">Abzan Iqbal</a></h4>
 						<p>At erat pellentesque adipiscing
 								commodo elit.</p>
-							<ul class="social-media">
-								<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-								<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+								<ul class="social-media">
+								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
+								<li><a href=""><i class="fab fa-instagram"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter"></i></a></li>
 							</ul>
 					</div>
 				</div>
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team">
+					<img alt="team-img" src="assets/img/2.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
+					<h4><a href="">Athistakumar</a></h4>
+						<p>At erat pellentesque adipiscing
+								commodo elit.</p>
+								<ul class="social-media">
+								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
+								<li><a href=""><i class="fab fa-instagram"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter"></i></a></li>
+							</ul>
+					</div>
+				</div>
+
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500" style="margin-bottom: 20px;">
+					<div class="our-team">
+					<img alt="team-img" src="assets/img/7.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
+					<h4><a href="">Nuha Yousuf</a></h4>
+						<p>At erat pellentesque adipiscing
+								commodo elit.</p>
+								<ul class="social-media">
+								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
+								<li><a href=""><i class="fab fa-instagram"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter"></i></a></li>
+							</ul>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team">
+					<img alt="team-img" src="assets/img/3.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
+					<h4><a href="">Kalindu Bawantha</a></h4>
+						<p>At erat pellentesque adipiscing
+								commodo elit.</p>
+								<ul class="social-media">
+								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
+								<li><a href=""><i class="fab fa-instagram"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter"></i></a></li>
+							</ul>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team">
+					<img alt="team-img" src="assets/img/4.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
+					<h4><a href="">Himashi</a></h4>
+						<p>At erat pellentesque adipiscing
+								commodo elit.</p>
+								<ul class="social-media">
+								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
+								<li><a href=""><i class="fab fa-instagram"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter"></i></a></li>
+							</ul>
+					</div>
+				</div>
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team">
+					<img alt="team-img" src="assets/img/5.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
+					<h4><a href="">Hiruni</a></h4>
+						<p>At erat pellentesque adipiscing
+								commodo elit.</p>
+								<ul class="social-media">
+								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
+								<li><a href=""><i class="fab fa-instagram"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter"></i></a></li>
+							</ul>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</section>
 
-	<!-- Our partners Section -->
-	<section class="our-partners-section gap" style="background:#fcfcfc" data-aos="fade-up"  data-aos-delay="200" data-aos-duration="300">
-		<div class="container">
-			<div class="hading">
-				<h2>Our trusted partners</h2>
-			</div>
-			<div class="row align-items-center logodata owl-carousel owl-theme">
-				<div class="col-xl-12 item">
-					<div class="logo-img">
-						<img alt="logo-img" src="user/assets/img/logo-1.png">
-						<h5>Kings Arms</h5>
-					</div>
-				</div>
-				<div class="col-xl-12 item">
-					<div class="logo-img">
-						<img alt="logo-img" src="user/assets/img/logo-2.png">
-						<h5>Wilmington</h5>
-					</div>
-				</div>
-				<div class="col-xl-12 item">
-					<div class="logo-img">
-						<img alt="logo-img" src="user/assets/img/logo-3.png">
-						<h5>Kennington</h5>
-					</div>
-				</div>
-				<div class="col-xl-12 item">
-					<div class="logo-img">
-						<img alt="logo-img" src="user/assets/img/logo-4.png">
-						<h5>The Victoria</h5>
-					</div>
-				</div>
-				<div class="col-xl-12 item">
-					<div class="logo-img">
-						<img alt="logo-img" src="user/assets/img/logo-5.png">
-						<h5>The Andover Arms</h5>
-					</div>
-				</div>
-				<div class="col-xl-12 item">
-					<div class="logo-img">
-						<img alt="logo-img" src="user/assets/img/logo-1.png">
-						<h5>Kings Arms</h5>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Our partners Section -->
+
 	<section class="service-shows gap" data-aos="fade-up"  data-aos-delay="200" data-aos-duration="300">
 		<div class="container-fluid">
 			<div class="row">
@@ -279,11 +289,11 @@
 
 								<div>
 									<h6>Thomas Adamson</h6>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
 								</div>
 							</div>
 						</div>
@@ -295,11 +305,11 @@
 
 								<div>
 									<h6>Thomas Adamson</h6>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
 								</div>
 							</div>
 						</div>
@@ -318,7 +328,7 @@
 					<div class="get-the-menu">
 						<h2 data-aos="fade-up"  data-aos-delay="200" data-aos-duration="300">Get the menu of your favorite restaurants every day</h2>
 						<form data-aos="fade-up"  data-aos-delay="300" data-aos-duration="400">
-							<i class="fa-regular fa-bell"></i>
+							<i class="far fa-bell"></i>
 							<input type="text" name="email" placeholder="Enter email address">
 							<button class="button button-2">Subscribe</button>
 						</form>

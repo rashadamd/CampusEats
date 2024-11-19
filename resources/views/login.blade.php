@@ -13,7 +13,7 @@
 						<div class="about-text pricing-table">
 							<ul class="crumbs d-flex" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
 								<li><a href="/">Home</a></li>
-								<li><a href="/login"><i class="fa-solid fa-right-long"></i>Login</a></li>
+								<li><a href="/login"><i class="fas fa-right-long"></i>Login</a></li>
 								
 							</ul>
 							<h2 data-aos="fade-up"  data-aos-delay="300" data-aos-duration="400" style="color: #fff;">Login</h2>

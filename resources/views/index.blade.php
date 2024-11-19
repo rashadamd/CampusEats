@@ -28,7 +28,7 @@
 						<img alt="man" src="assets/img/photo-1.png">
 				
 						<div class="wilmington location-restaurant" style="top: 30%; left: 70%;">
-							<i class="fa-solid fa-location-dot"></i>
+							<i class="fas fa-location-dot"></i>
 							<div>
 								<h6>Restaurants</h6>
 								<p>In Your city</p>
@@ -112,7 +112,7 @@
 				
 			</div>
 			<div class="button-gap">
-				<a href="login" class="button button-2 non">See All<i class="fa-solid fa-arrow-right"></i></a>
+				<a href="login" class="button button-2 non">See All<i class="fas fa-arrow-right"></i></a>
 			</div>
 		</div>
 	</section>
@@ -187,11 +187,11 @@
 
 									<div>
 										<h6>Thomas Adamson</h6>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
 									</div>
 								</div>
 						</div>
@@ -202,11 +202,11 @@
 
 									<div>
 										<h6>Thomas Adamson</h6>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
 									</div>
 								</div>
 						</div>
@@ -217,11 +217,11 @@
 
 									<div>
 										<h6>Thomas Adamson</h6>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
-										<i class="fa-solid fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
 									</div>
 								</div>
 						</div>
@@ -231,7 +231,7 @@
 				<div class="col-xl-6 col-lg-12" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="400">
 					<div class="reviews-img">
 						<img alt="photo" src="assets/img/photo-4.png">
-						<i class="fa-regular fa-thumbs-up"></i>
+						<i class="far fa-thumbs-up"></i>
 					</div>
 				</div>
 			</div>
@@ -254,13 +254,13 @@
 							<div class="row">
 								<div class="col-lg-4 col-md-4 col-sm-12">
 									<div class="address">
-										<i class="fa-solid fa-location-dot"></i>
+										<i class="fas fa-location-dot"></i>
 										<h5>South Eatsern Uniiversity of Sri Lanka</h5>
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-4 col-sm-12">
 									<div class="address">
-										<i class="fa-solid fa-envelope"></i>
+										<i class="fas fa-envelope"></i>
 										<a href="mailto:campuseats@mail.com"><h6>campuseats@mail.com</h6></a>
 										<span>Lorem ipsum dolor sit.</span>
 										<a href="mailto:campuseats@mail.com"><h6>campuseats@mail.com</h6></a>
@@ -270,7 +270,7 @@
 
 								<div class="col-lg-4 col-md-4 col-sm-12">
 									<div class="address">
-										<i class="fa-solid fa-phone"></i>
+										<i class="fas fa-phone"></i>
 										<a href="callto:+94799999999"><h6>+94 79 999 9999</h6></a>
 										<span>Et netus et malesuada</span>
 										<a href="callto:+94799999999"><h6>+94 79 999 9999</h6></a>
@@ -300,7 +300,7 @@
 					<div class="get-the-menu">
 						<h2>Get the menu of your favorite restaurants every day</h2>
 						<form>
-							<i class="fa-regular fa-bell"></i>
+							<i class="far fa-bell"></i>
 							<input type="text" name="email" placeholder="Enter email address">
 							<button class="button button-2">Subscribe</button>
 						</form>
