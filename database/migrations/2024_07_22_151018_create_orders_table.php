@@ -12,20 +12,21 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('orders', function (Blueprint $table) {
-            $table->id('orderid');
+            $table->id('orderid'); // Primary key for the order
             $table->foreignId('userid')->references('userid')->on('users')->onDelete('cascade');
-            $table->foreignId('restid')->references('restid')->on('restaurants')->onDelete('cascade');
-            $table->dateTime('date');
-            $table->string('status');
-            $table->decimal('amount', 8, 2);
-            $table->string('address');
-            $table->timestamps();
+            $table->foreignId('menuid')->references('menuid')->on('menus')->onDelete('cascade'); // Foreign key to menus table
+            $table->integer('quantity'); // Quantity of the menu item
+            $table->decimal('amount', 8, 2); // Total amount for the order
+            $table->enum('status', ['pending', 'processing', 'completed'])->default('pending'); // Order status
+            $table->timestamps(); // Created at and updated at timestamps
         });
     }
 
-
+    /**
+     * Reverse the migrations.
+     */
     public function down(): void
     {
-        Schema::dropIfExists('orders');
+        Schema::dropIfExists('orders'); // Drop the orders table if rolled back
     }
 };
