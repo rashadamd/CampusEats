@@ -109,7 +109,6 @@
 										  <a href="restaurants">Restaurants</a>
 										  <div class="dropdown">
 											<a href="restaurants">Restaurants</a>
-											<a href="restaurantcard">Restaurant Card</a>
 											<a href="checkout">Checkout</a>
 										  </div>
 										</li>

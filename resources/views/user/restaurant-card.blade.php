@@ -38,8 +38,6 @@
 	</section>
 
 
-
-
 	<!-- tabs -->
 	<section class="tabs gap">
 
@@ -64,7 +62,7 @@
 										<h5 class="mb-0"><span class="fs-14 me-2">start From</span>{{ $menu->price }}</h5>
 									</div>
 									<div>
-										<a href="{{ route('checkout') }}" class="btn btn-danger">Buy</a>
+										<a href="checkout-{{$menu->menuid}}" class="btn btn-danger">Buy</a>
 									</div>
 								</div>
 							</div>	

@@ -60,10 +60,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/userindex', [DashboardController::class, 'showRestaurants'])->name('userindex');
 
     Route::get('/restaurants', [RestUserController::class, 'showRestaurantsFull'])->name('restaurants');
-    Route::get('/restaurants-card-{id}',[ RestUserController::class, 'showCard']);
+    //Route::get('/restaurants-card-{id}',[ RestUserController::class, 'showCard']);
     Route::get('/restaurants-card-{id}',[ RestUserController::class, 'showRestCard']);
 
-    Route::get('/orderpage', [UserController::class, 'orderpage'])->name('orderpage');
+    Route::get('/userorderpage', [UserController::class, 'orderpage'])->name('userorderpage');
     Route::get('/checkout', [UserController::class, 'checkout'])->name('checkout');
     Route::get('/userabout', [UserController::class, 'userabout'])->name('userabout');
     Route::get('/restaurantcard', [UserController::class, 'restaurantcard'])->name('restaurantcard');
@@ -80,7 +80,9 @@ Route::middleware('auth')->group(function () {
     Route::post('/menupost', [MenuController::class, 'store'])->name('menupost');
     Route::get('/menuview', [MenuController::class, 'menu'])->name('menuview');
 
-    Route::get('/checkout', [OrderController::class, 'checkout'])->name('checkout');
+    //Route::get('/checkout', [OrderController::class, 'checkout'])->name('checkout');
+
+    Route::get('/checkout-{id}',[ OrderController::class, 'checkout']);
 
 });
 

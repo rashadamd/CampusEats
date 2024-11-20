@@ -17,16 +17,17 @@ class RestUserController extends Controller
         return view('user.restaurants', compact('restaurants', 'user'));
     }
 
-    public function showCard($id){
-        //dd($id);
+    // public function showCard($id){
+    //     //dd($id);
 
-        $user = Auth::user();
-        $userid = $user->userid;
+    //     $user = Auth::user();
+    //     $userid = $user->userid;
 
-        $rests=User::get()->where('restid' , $userid)->all();
+    //     $rests=User::get()->where('restid' , $userid)->all();
 
-        return view('user.restaurant-card', compact('rests', 'user'));
-    }
+    //     return view('user.restaurant-card', compact('rests', 'user'));
+    // }
+
 
     public function showRestCard($id){
         //dd($id);
@@ -36,8 +37,5 @@ class RestUserController extends Controller
 
         return view('user.restaurant-card', compact('menus', 'user'));
     }
-
-    
-
 
 }

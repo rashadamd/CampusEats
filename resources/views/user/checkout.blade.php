@@ -30,36 +30,40 @@
 						<div class="title-checkout">
 							<h2>Your order</h2>
 						</div>
+					
+
 						<div class="banner-wilmington">
-							<img alt="logo" src="user/assets/img/logo-s.jpg">
-							<h6>Kennington Lane Cafe</h6>
+							<img alt="logo" src="{{ asset('storage/' . $restaurants->image) }}" alt="logo" width="50" height="50">
+							<h6>{{ $restaurants->name }}</h6>
 						</div>
+
 						<ul>
-							<li class="price-list">
+							
+						<li class="price-list">
 								<i class="closeButton fas fa-xmark"></i>
 								<div class="counter-container">
 									<div class="counter-food">
-										<img alt="food" src="user/assets/img/order-1.png">
-										<h4>Pasta, kiwi and sauce chilli</h4>
+										<img alt="food" src="{{ asset('storage/' . $menus->image) }}" width="80" height="80">
+										<h3 style="margin:5px;">{{ $menus->name }}</h3>
 									</div>
-									<h3>$39</h3>
+									
 								</div>
 								<div class="price">
 									<div>
-					              		<h2>$39</h2>
+					              		<h2>{{ $menus->price }}</h2>
 					              		<span>Sum</span>
 					              	</div>
 					              		<div>
 						             	 	<div class="qty-input">
 												<button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
-												<input class="product-qty" type="number" name="product-qty" min="0" value="1">
+												<input class="product-qty" type="number" name="product-qty" min="1" value="1" max="50">
 												<button class="qty-count qty-count--add" data-action="add" type="button">+</button>
 											</div>
 											<span>Quantity</span>
 										</div>
 								</div>
 							</li>
-
+						
 						</ul>
 						<div class="totel-price">
 							<span>To pay:</span>
@@ -107,5 +111,4 @@
 		</div>
 	</section>
 	
-
 @endsection

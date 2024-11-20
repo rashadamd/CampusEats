@@ -9,21 +9,25 @@ use Illuminate\Support\Facades\Auth;
 
 class OrderController extends Controller
 {
-    // app/Http/Controllers/OrderController.php
-public function checkout(Request $request)
-{
-    //$menus = Menu::all();
-    //dd($id);
-    $user = Auth::user();
-    $userid = $user->userid;
-    //dd(vars: $card->userid);
-    $menus=Menu::get()->where('restid' , operator: $user->userid)->all();
+    public function checkout($id)
+    {
+        //$menus = Menu::all();
+        //dd($id);
+        $user = Auth::user();
+        //$userid = $user->userid;
+        //dd(vars: $card->userid);
+        $menus = Menu::findOrFail($id);
+       // dd($menus->restid);
 
-    // new
-    $restaurants = User::where('client', 'restaurant')->get();
+        // dd(vars: $menus);
 
-    return view('user.checkout', compact('menus', 'user','restaurants'));
+        // $restaurants=User::get()->where('userid' , $menus->restid)->all();
+        $restaurants = User::where('userid', $menus->restid)->first();
+        
+        //dd(vars: $restaurants);
+        
+        return view('user.checkout', compact('menus', 'user','restaurants'));
 
-}
+    }
 
 }

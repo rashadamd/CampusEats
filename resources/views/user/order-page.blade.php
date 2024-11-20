@@ -32,6 +32,7 @@
 										<th>Restaurant</th>
 										<th>Address</th>
 										<th>Amount</th>
+										<th>Mobile No.</th>
 										<th>Status Order</th>
 										
 										<th></th>
@@ -47,6 +48,7 @@
 										<td>Olivia Shine</td>
 										<td class="text-ov">35 Station Road London</td>
 										<td class="text-ov">$82.46</td>
+										<td class="text-ov">07111111111</td>
 									
 									<td><span class="btn bgl-danger text-danger btn-rounded btn-sm">Pending</span></td>
 										
