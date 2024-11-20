@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\RestaurantController;
 use App\Http\Controllers\RestUserController;
 use Illuminate\Support\Facades\Route;
@@ -78,6 +79,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/menu', [RestaurantController::class, 'menu'])->name('menu');
     Route::post('/menupost', [MenuController::class, 'store'])->name('menupost');
     Route::get('/menuview', [MenuController::class, 'menu'])->name('menuview');
+
+    Route::get('/checkout', [OrderController::class, 'checkout'])->name('checkout');
 
 });
 

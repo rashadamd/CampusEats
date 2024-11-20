@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session ;
 use Illuminate\Support\Facades\Validator;
 
 class UserController extends Controller
@@ -119,6 +120,7 @@ class UserController extends Controller
      // Logout Function
      public function logout()
      {
+        Session::flush();
          Auth::logout();
          return redirect('/login')->with('success', 'You have been logged out');
      }

@@ -37,5 +37,7 @@ class RestUserController extends Controller
         return view('user.restaurant-card', compact('menus', 'user'));
     }
 
+    
+
 
 }
