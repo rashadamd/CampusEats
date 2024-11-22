@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('menuid')->references('menuid')->on('menus')->onDelete('cascade'); // Foreign key to menus table
             $table->integer('quantity'); // Quantity of the menu item
             $table->decimal('amount', 8, 2); // Total amount for the order
-            $table->enum('status', ['pending', 'processing', 'completed'])->default('pending'); // Order status
+            $table->enum('status', ['pending', 'processing', 'completed'])->default('pending');
             $table->timestamps(); // Created at and updated at timestamps
         });
     }

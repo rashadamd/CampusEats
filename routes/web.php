@@ -80,8 +80,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/menupost', [MenuController::class, 'store'])->name('menupost');
     Route::get('/menuview', [MenuController::class, 'menu'])->name('menuview');
 
-    //Route::get('/checkout', [OrderController::class, 'checkout'])->name('checkout');
-
+    Route::post('/checkout', [OrderController::class, 'store'])->name('checkout.store');
     Route::get('/checkout-{id}',[ OrderController::class, 'checkout']);
 
 });

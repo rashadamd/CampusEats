@@ -42,7 +42,7 @@ class MenuController extends Controller
             return redirect()->back()->withErrors(['error' => 'Error creating menu item: ' . $e->getMessage()]);
         }
     
-        return redirect()->route('menu')->with('success', 'Menu item created successfully.');
+        return redirect()->route('menuview')->with('success', 'Menu item created successfully.');
 
 
     }

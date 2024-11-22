@@ -24,17 +24,12 @@
 							<table class="table display mb-4 dataTablesCard order-table shadow-hover  card-table text-black" id="example5">
 								<thead>
 									<tr>
-										<th>
-											<div class="form-check ms-2">
-											  <input class="form-check-input" type="checkbox" value="" id="checkAll">
-											  <label class="form-check-label" for="checkAll">
-											  </label>
-											</div>  
-										</th>
+										
 										<th>Order ID</th>
 										<th>Date</th>
 										<th>Customer</th>
 										<th>Location</th>
+										<th>Mobile No.</th>
 										<th>Amount</th>
 										<th>Status Order</th>
 										
@@ -42,6 +37,19 @@
 									</tr>
 								</thead>
 								<tbody>
+									<tr>
+										
+										<td>#0001234</td>
+										<td class="wspace-no">26 March 2020, 12:42 AM</td>
+										<td>Olivia Shine</td>
+										<td class="text-ov">35 Station Road London</td>
+										<td class="text-ov">071623572</td>
+										<td class="text-ov">$82.46</td>
+									
+									<td><span class="btn bgl-danger text-danger btn-rounded btn-sm">Pending</span></td>
+										
+									</tr>
+<!-- 
 									<tr>
 										<td class="tbl-bx">
 											<div class="form-check ms-2">
@@ -54,6 +62,7 @@
 										<td class="wspace-no">26 March 2020, 12:42 AM</td>
 										<td>Olivia Shine</td>
 										<td class="text-ov">35 Station Road London</td>
+										<td class="text-ov">071623572</td>
 										<td class="text-ov">$82.46</td>
 									
 									<td><span class="btn bgl-danger text-danger btn-rounded btn-sm">Pending</span></td>
@@ -72,317 +81,9 @@
 												</div>
 											</div>
 										</td>
-									</tr>
-									<tr>
-										<td class="tbl-bx">
-											<div class="form-check ms-2">
-											  <input class="form-check-input" type="checkbox" value="" id="customCheckBox2">
-											  <label class="form-check-label" for="customCheckBox2">
-											  </label>
-											</div>
-										</td>
-										<td>#0001234</td>
-										<td class="wspace-no">26 March 2020, 12:42 AM</td>
-										<td>James WItcwicky</td>
-										<td class="text-ov">Corner Street 5th London</td>
-										<td class="text-ov">$82.46</td>
+									</tr> -->
+									<!-- <td><span class="btn bgl-success text-success btn-rounded btn-sm">DELIVERED</span></td> -->
 									
-										<td><span class="btn bgl-success text-success btn-rounded btn-sm">DELIVERED</span></td>
-										<td>
-											<div class="dropdown ml-auto">
-												<div class="btn-link" data-bs-toggle="dropdown" >
-													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg>
-												</div>
-												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-check-circle me-1 text-success"></i>Accept order</a>
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-times-circle me-1 text-danger"></i>Reject order</a>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="tbl-bx">
-											<div class="form-check ms-2">
-											  <input class="form-check-input" type="checkbox" value="" id="customCheckBox3">
-											  <label class="form-check-label" for="customCheckBox3">
-											  </label>
-											</div>
-										</td>
-										<td>#0001234</td>
-										<td class="wspace-no">26 March 2020, 12:42 AM</td>
-										<td>Veronica</td>
-										<td class="text-ov">21 King Street London</td>
-										<td class="text-ov">$82.46</td>
-									
-										<td><span class="btn bgl-danger text-danger btn-rounded btn-sm">PENDING</span></td>
-										<td>
-											<div class="dropdown ml-auto">
-												<div class="btn-link" data-bs-toggle="dropdown" >
-													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg>
-												</div>
-												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-check-circle me-1 text-success"></i>Accept order</a>
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-times-circle me-1 text-danger"></i>Reject order</a>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="tbl-bx">
-											<div class="form-check ms-2">
-											  <input class="form-check-input" type="checkbox" value="" id="customCheckBox4">
-											  <label class="form-check-label" for="customCheckBox4">
-											  </label>
-											</div>
-										</td>
-										<td>#0001234</td>
-										<td class="wspace-no">26 March 2020, 12:42 AM</td>
-										<td>Emilia Johanson</td>
-										<td class="text-ov">67 St. John’s Road London</td>
-										<td class="text-ov">$82.46</td>
-									
-										<td><span class="btn bgl-success text-success btn-rounded btn-sm">DELIVERED</span></td>
-										<td>
-											<div class="dropdown ml-auto">
-												<div class="btn-link" data-bs-toggle="dropdown" >
-													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg>
-												</div>
-												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-check-circle me-1 text-success"></i>Accept order</a>
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-times-circle me-1 text-danger"></i>Reject order</a>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="tbl-bx">
-											<div class="form-check ms-2">
-											  <input class="form-check-input" type="checkbox" value="" id="customCheckBox5">
-											  <label class="form-check-label" for="customCheckBox5">
-											  </label>
-											</div>
-										</td>
-										<td>#0001234</td>
-										<td class="wspace-no">26 March 2020, 12:42 AM</td>
-										<td>Emilia Johanson</td>
-										<td class="text-ov">67 St. John’s Road London</td>
-										<td class="text-ov">$82.46</td>
-									
-										<td><span class="btn bgl-success text-success btn-rounded btn-sm">DELIVERED</span></td>
-										<td>
-											<div class="dropdown ml-auto">
-												<div class="btn-link" data-bs-toggle="dropdown" >
-													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg>
-												</div>
-												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-check-circle me-1 text-success"></i>Accept order</a>
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-times-circle me-1 text-danger"></i>Reject order</a>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="tbl-bx">
-											<div class="form-check ms-2">
-											  <input class="form-check-input" type="checkbox" value="" id="customCheckBox6">
-											  <label class="form-check-label" for="customCheckBox6">
-											  </label>
-											</div>
-										</td>
-										<td>#0001234</td>
-										<td class="wspace-no">26 March 2020, 12:42 AM</td>
-										<td>Emilia Johanson</td>
-										<td class="text-ov">67 St. John’s Road London</td>
-										<td class="text-ov">$82.46</td>
-									
-										<td><span class="btn bgl-success text-success btn-rounded btn-sm">DELIVERED</span></td>
-										<td>
-											<div class="dropdown ml-auto">
-												<div class="btn-link" data-bs-toggle="dropdown" >
-													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg>
-												</div>
-												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-check-circle me-1 text-success"></i>Accept order</a>
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-times-circle me-1 text-danger"></i>Reject order</a>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="tbl-bx">
-											<div class="form-check ms-2">
-											  <input class="form-check-input" type="checkbox" value="" id="customCheckBox9">
-											  <label class="form-check-label" for="customCheckBox9">
-											  </label>
-											</div>
-										</td>
-										<td>#0001234</td>
-										<td class="wspace-no">26 March 2020, 12:42 AM</td>
-										<td>Emilia Johanson</td>
-										<td class="text-ov">67 St. John’s Road London</td>
-										<td class="text-ov">$82.46</td>
-									
-										<td><span class="btn bgl-success text-success btn-rounded btn-sm">DELIVERED</span></td>
-										<td>
-											<div class="dropdown ml-auto">
-												<div class="btn-link" data-bs-toggle="dropdown" >
-													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg>
-												</div>
-												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-check-circle me-1 text-success"></i>Accept order</a>
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-times-circle me-1 text-danger"></i>Reject order</a>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="tbl-bx">
-											<div class="form-check ms-2">
-											  <input class="form-check-input" type="checkbox" value="" id="customCheckBox7">
-											  <label class="form-check-label" for="customCheckBox7">
-											  </label>
-											</div>
-										</td>
-										<td>#0001234</td>
-										<td class="wspace-no">26 March 2020, 12:42 AM</td>
-										<td>Jessica Wong</td>
-										<td class="text-ov">11 Church Road London</td>
-										<td class="text-ov">$82.46</td>
-									
-										<td><span class="btn bgl-danger text-danger btn-rounded btn-sm">PENDING</span></td>
-										<td>
-											<div class="dropdown ml-auto">
-												<div class="btn-link" data-bs-toggle="dropdown" >
-													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg>
-												</div>
-												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-check-circle me-1 text-success"></i>Accept order</a>
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-times-circle me-1 text-danger"></i>Reject order</a>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="tbl-bx">
-											<div class="form-check ms-2">
-											  <input class="form-check-input" type="checkbox" value="" id="customCheckBox1">
-											  <label class="form-check-label" for="customCheckBox1">
-											  </label>
-											</div>
-										</td>
-										<td>#0001234</td>
-										<td class="wspace-no">26 March 2020, 12:42 AM</td>
-										<td>Roberto Carlo</td>
-										<td class="text-ov">544 Manor Road London</td>
-										<td class="text-ov">$82.46</td>
-									
-										<td><span class="btn bgl-danger text-danger btn-rounded btn-sm">PENDING</span></td>
-										<td>
-											<div class="dropdown ml-auto">
-												<div class="btn-link" data-bs-toggle="dropdown" >
-													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg>
-												</div>
-												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-check-circle me-1 text-success"></i>Accept order</a>
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-times-circle me-1 text-danger"></i>Reject order</a>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="tbl-bx">
-											<div class="form-check ms-2">
-											  <input class="form-check-input" type="checkbox" value="" id="customCheckBox8">
-											  <label class="form-check-label" for="customCheckBox8">
-											  </label>
-											</div>
-										</td>
-										<td>#0001234</td>
-										<td class="wspace-no">26 March 2020, 12:42 AM</td>
-										<td>David Horison</td>
-										<td class="text-ov">981 St. John’s Road London</td>
-										<td class="text-ov">$82.46</td>
-									
-										<td><span class="btn bgl-danger text-danger btn-rounded btn-sm">PENDING</span></td>
-										<td>
-											<div class="dropdown ml-auto">
-												<div class="btn-link" data-bs-toggle="dropdown" >
-													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg>
-												</div>
-												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-check-circle me-1 text-success"></i>Accept order</a>
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-times-circle me-1 text-danger"></i>Reject order</a>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="tbl-bx">
-											<div class="form-check ms-2">
-											  <input class="form-check-input" type="checkbox" value="" id="customCheckBox11">
-											  <label class="form-check-label" for="customCheckBox11">
-											  </label>
-											</div>
-										</td>
-										<td>#0001234</td>
-										<td class="wspace-no">26 March 2020, 12:42 AM</td>
-										<td>Franky Sihotang</td>
-										<td class="text-ov">6 The Avenue London</td>
-										<td class="text-ov">$82.46</td>
-									
-										<td><span class="btn bgl-danger text-danger btn-rounded btn-sm">PENDING</span></td>
-										<td>
-											<div class="dropdown ml-auto">
-												<div class="btn-link" data-bs-toggle="dropdown" >
-													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg>
-												</div>
-												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-check-circle me-1 text-success"></i>Accept order</a>
-													<a class="dropdown-item text-black" href="javascript:void(0);"><i class="far fa-times-circle me-1 text-danger"></i>Reject order</a>
-												</div>
-											</div>
-										</td>
-									</tr>
 								</tbody>
 							</table>
 						</div>
