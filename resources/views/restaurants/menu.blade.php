@@ -3,8 +3,6 @@
 @section('content')
 
 
-
-
 <div class="container-fluid">
 				<div class="mb-sm-4 d-flex flex-wrap align-items-center text-head">
 					<h2 class="mb-3 me-auto">Add Menu</h2>

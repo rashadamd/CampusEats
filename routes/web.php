@@ -80,6 +80,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/menu', [RestaurantController::class, 'menu'])->name('menu');
     Route::post('/menupost', [MenuController::class, 'store'])->name('menupost');
     Route::get('/menuview', [MenuController::class, 'menu'])->name('menuview');
+    Route::delete('/menu-{id}', [MenuController::class, 'destroy'])->name('menu.delete');
 
     Route::post('/checkout', [OrderController::class, 'store'])->name('checkout.store');
     Route::get('/checkout-{id}',[ OrderController::class, 'checkout']);
@@ -91,4 +92,11 @@ Route::middleware('auth')->group(function () {
 
     
 });
+
+// but acccordign to my above whole.
+// need to retrive from databse and show here.
+// go with the previous messages of mine.
+// users table has userid. it is with restid and userid in same column. by differentitaing with role as clients.
+// and menus table has the restid a working one.
+// as you see here give properly.
 

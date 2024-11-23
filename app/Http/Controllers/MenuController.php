@@ -6,6 +6,7 @@ use App\Models\Menu;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class MenuController extends Controller
 {
@@ -64,6 +65,23 @@ class MenuController extends Controller
         $user = Auth::user();
     //    dd($user['id']);
         return view('restaurants.product-grid',compact('user'));
+    }
+
+    public function destroy($id)
+    {
+        // Find the menu item by its ID
+        $menu = Menu::findOrFail($id);
+        
+        // Delete the image from storage if it exists
+        if ($menu->image) {
+            Storage::delete('public/' . $menu->image);
+        }
+
+        // Delete the menu item from the database
+        $menu->delete();
+
+        // Redirect back with a success message
+        return redirect()->route('menuview')->with('success', 'Menu item deleted successfully.');
     }
 }
 
