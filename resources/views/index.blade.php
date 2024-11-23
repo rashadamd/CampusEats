@@ -140,35 +140,45 @@
 	<!-- counters-section -->
 	<section class="counters-section" style="padding: 20px 0px">
 		<div class="container">
-			<div class="row align-items-center">
-					<div class="col-lg-3 col-md-6 col-sm-12"   data-aos-delay="200" data-aos-duration="300">
-						<div>
-							<h2>Service shows good taste.</h2>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-12"  data-aos-delay="300" data-aos-duration="400">
-						<div class="count-time">
-								<h2 class="timer count-title count-number" data-to="976" data-speed="6000">976</h2>
-									<p>Satisfied
-									Customer</p>
-						</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12"  data-aos-delay="400" data-aos-duration="500">
-						<div class="count-time">
-								<h2 class="timer count-title count-number" data-to="1520" data-speed="6000">1520</h2>
-									<p>Best
-											Restaurants</p>
-						</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12"  data-aos-delay="500" data-aos-duration="600">
-						<div class="count-time sp">
-								<h2 class="timer count-title count-number" data-to="650" data-speed="6000">650</h2>
-								
-									<p>Food 
-											Delivered</p>
-						</div>
+		<div class="row align-items-center">
+			<!-- Service Header -->
+			<div class="col-lg-3 col-md-6 col-sm-12" data-aos-delay="200" data-aos-duration="300">
+				<div>
+					<h2>Service shows good taste.</h2>
 				</div>
 			</div>
+
+			<!-- Satisfied Customers -->
+			<div class="col-lg-3 col-md-6 col-sm-12" data-aos-delay="300" data-aos-duration="400">
+				<div class="count-time">
+					<h2 class="timer count-title count-number" data-to="{{ $satisfiedCustomerCount }}" data-speed="6000">
+						{{ $satisfiedCustomerCount }}
+					</h2>
+					<p>Satisfied Customer</p>
+				</div>
+			</div>
+
+			<!-- Best Restaurants -->
+			<div class="col-lg-3 col-md-6 col-sm-12" data-aos-delay="400" data-aos-duration="500">
+				<div class="count-time">
+					<h2 class="timer count-title count-number" data-to="{{ $restaurantCount }}" data-speed="6000">
+						{{ $restaurantCount }}
+					</h2>
+					<p>Best Restaurants</p>
+				</div>
+			</div>
+
+			<!-- Food Delivered -->
+			<div class="col-lg-3 col-md-6 col-sm-12" data-aos-delay="500" data-aos-duration="600">
+				<div class="count-time sp">
+					<h2 class="timer count-title count-number" data-to="{{ $foodDeliveredCount }}" data-speed="6000">
+						{{ $foodDeliveredCount }}
+					</h2>
+					<p>Food Delivered</p>
+				</div>
+			</div>
+		</div>
+
 		</div>
 	</section>
 	
@@ -263,8 +273,7 @@
 										<i class="fas fa-envelope"></i>
 										<a href="mailto:campuseats@mail.com"><h6>campuseats@mail.com</h6></a>
 										<span>Lorem ipsum dolor sit.</span>
-										<a href="mailto:campuseats@mail.com"><h6>campuseats@mail.com</h6></a>
-										<span>Dolore magna aliqua</span>
+										
 									</div>
 								</div>
 
@@ -273,8 +282,7 @@
 										<i class="fas fa-phone"></i>
 										<a href="callto:+94799999999"><h6>+94 79 999 9999</h6></a>
 										<span>Et netus et malesuada</span>
-										<a href="callto:+94799999999"><h6>+94 79 999 9999</h6></a>
-										<span>Enim tortor auctor urna</span>
+										
 									</div>
 								</div>
 
@@ -288,7 +296,7 @@
   </section>
 
 	<!-- subscribe-section -->
-	<section class="subscribe-section gap" style="background:#fcfcfc">
+	<!-- <section class="subscribe-section gap" style="background:#fcfcfc">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-6" data-aos="flip-up"  data-aos-delay="200" data-aos-duration="300">
@@ -308,6 +316,6 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 @endsection

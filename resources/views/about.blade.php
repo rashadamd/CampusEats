@@ -12,8 +12,7 @@
 							<li><a href="home">Home</a></li>
 							<li class="two"><a href="about"><i class="fas fa-right-long"></i> About Us</a></li>
 						</ul>
-						<h2 style="color:#fff">Nothing to worry about with Quickeat</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+						<h2 style="color:#fff">Nothing to worry about with CampusEats</h2>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
@@ -35,8 +34,7 @@
 				</div>
 				<div class="offset-xl-1 col-lg-5 col-md-12 col-sm-12" data-aos="flip-up"  data-aos-delay="400" data-aos-duration="500">
 					<div class="our-mission-text">
-						<h2>Our mission is
-								to save you time</h2>
+						<h2>Our mission is to save you time</h2>
 							<p>Viverra vitae congue eu consequat ac felis. Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Velit ut tortor pretium viverra suspendisse potenti nullam ac tortor.<br><br>
 
 							Eget egestas purus viverra accumsan in nisl nisi scelerisque. Tincidunt augue interdum velit euismod in pellentesque.</p>
@@ -54,8 +52,7 @@
 						<img class="on" alt="icon" src="assets/img/service-icon-2.svg">
 						<img class="off" alt="icon" src="assets/img/service-icon-1.svg">
 
-						<h3>Free
-								Delivery</h3>
+						<h3>Free Delivery</h3>
 								<p>Cras fermentum odio eu feugiat pretium nibh ipsum. Ut faucibus pulvinar elementum consequat integer enim neque volutpat.</p>
 					</div>
 				</div>
@@ -64,8 +61,7 @@
 						<img class="on" alt="icon" src="assets/img/service-icon-3.svg">
 						<img class="off" alt="icon" src="assets/img/service-icon-4.svg">
 
-						<h3>Save
-								Your Time</h3>
+						<h3>Save Your Time</h3>
 								<p>Vulputate dignissim suspendisse in est ante in nibh mauris. Pretium nibh ipsum consequat nisl vel pretium lectus quam id.</p>
 					</div>
 				</div>
@@ -83,8 +79,7 @@
 						<img class="on" alt="icon" src="assets/img/service-icon-7.svg">
 						<img class="off" alt="icon" src="assets/img/service-icon-8.svg">
 
-						<h3>Variety
-								Food</h3>
+						<h3>Variety Food</h3>
 								<p>Molestie a iaculis at erat pellentesque. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl.</p>
 					</div>
 				</div>
@@ -97,8 +92,7 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6" data-aos="fade-up"  data-aos-delay="200" data-aos-duration="300">
 					<div class="wait-a-minute">
-						<h2>Wait a minute
-								for delicious</h2>
+						<h2>Wait a minute for delicious</h2>
 						<p>Amet massa vitae tortor condimentum lacinia quis. Elit at imperdiet dui accumsan sit amet nulla facilisi. Lacus laoreet non curabitur gravida arcu ac tortor dignissim.</p>
 						<h6>Interdum varius sit amet mattis.</h6>
 						<ul class="paragraph">
@@ -115,12 +109,12 @@
 	</section>
 	
 	<!-- about-counters-section -->
-	<section class="about-counters-section gap" style="background-image: url(assets/img/background.png);">
+	<section class="about-counters-section gap" style="background-image: url(user/assets/img/background.png);">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-6 col-md-12 col-sm-12" data-aos="flip-up"  data-aos-delay="200" data-aos-duration="300">
 					<div class="about-counters-img">
-						<img alt="girl" src="assets/img/photo-10.png">
+						<img alt="girl" src="user/assets/img/photo-10.png">
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-12 col-sm-12" data-aos="flip-up"  data-aos-delay="300" data-aos-duration="400">
@@ -130,27 +124,21 @@
 							<h2>Service shows good taste.</h2>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="count-time">
-								<h2 class="timer count-title count-number" data-to="976" data-speed="2000">976</h2>
-									<p>Satisfied<br>
-									Customer</p>
-						</div>
+					
+				<!-- Best Restaurants -->
+				<div class="col-lg-6 col-md-6 col-sm-6" data-aos="flip-up" data-aos-delay="300" data-aos-duration="400">
+					<div class="count-time">
+						<h2 class="timer count-title count-number" data-to="{{ $restaurantCount }}" data-speed="2000">{{ $restaurantCount }}</h2>
+						<p>Best<br>Restaurants</p>
+					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6" data-aos="flip-up"  data-aos-delay="300" data-aos-duration="400">
-						<div class="count-time">
-								<h2 class="timer count-title count-number" data-to="12" data-speed="2000">12</h2>
-									<p>Best<br>
-											Restaurants</p>
-						</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="count-time sp">
-								<h2 class="timer count-title count-number" data-to="1" data-speed="2000">1</h2>
-								<span>k+</span>
-									<p>Food<br>
-											Delivered</p>
-						</div>
+
+				<!-- Food Delivered -->
+				<div class="col-lg-6 col-md-6 col-sm-6" data-aos="flip-up" data-aos-delay="300" data-aos-duration="400">
+					<div class="count-time sp">
+						<h2 class="timer count-title count-number" data-to="{{ $foodDeliveredCount }}" data-speed="2000">{{ $foodDeliveredCount }}</h2>
+						<p>Food<br>Delivered</p>
+					</div>
 				</div>
 			</div>
 				</div>
@@ -165,106 +153,88 @@
 				<h2>Our team</h2>
 			</div>
 			<div class="row">
-			<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500" style="margin-bottom: 20px;">
-					<div class="our-team">
-						<img alt="team-img" src="assets/img/1.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
-						<h4><a href="">Rashad Ahamed</a></h4>
-						<p>At erat pellentesque adipiscing
-								commodo elit.</p>
-							<ul class="social-media">
-								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
-								<li><a href=""><i class="fab fa-instagram"></i></a></li>
-								<li><a href=""><i class="fab fa-twitter"></i></a></li>
-							</ul>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
-					<div class="our-team">
-					<img alt="team-img" src="assets/img/6.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
-					<h4><a href="">Abzan Iqbal</a></h4>
-						<p>At erat pellentesque adipiscing
-								commodo elit.</p>
-								<ul class="social-media">
-								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
-								<li><a href=""><i class="fab fa-instagram"></i></a></li>
-								<li><a href=""><i class="fab fa-twitter"></i></a></li>
-							</ul>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
-					<div class="our-team">
-					<img alt="team-img" src="assets/img/2.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
-					<h4><a href="">Athistakumar</a></h4>
-						<p>At erat pellentesque adipiscing
-								commodo elit.</p>
-								<ul class="social-media">
-								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
-								<li><a href=""><i class="fab fa-instagram"></i></a></li>
-								<li><a href=""><i class="fab fa-twitter"></i></a></li>
+				<!-- Team Member 1 -->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team text-center">
+						<img alt="team-img" src="assets/img/1.jfif" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4 class="mt-3"><a href="#">Rashad Ahamed</a></h4>
+						<ul class="social-media">
+								<li><a href="https://www.facebook.com/i.am.Rashad.Ahamed"><i class="fab fa-facebook-f"></i></i></a></li>
+								<li><a href="https://www.instagram.com/rashad_.amd"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="https://x.com/Rashadamd"><i class="fab fa-twitter"></i></a></li>
 							</ul>
 					</div>
 				</div>
 
-				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500" style="margin-bottom: 20px;">
-					<div class="our-team">
-					<img alt="team-img" src="assets/img/7.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
-					<h4><a href="">Nuha Yousuf</a></h4>
-						<p>At erat pellentesque adipiscing
-								commodo elit.</p>
-								<ul class="social-media">
-								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
-								<li><a href=""><i class="fab fa-instagram"></i></a></li>
-								<li><a href=""><i class="fab fa-twitter"></i></a></li>
-							</ul>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
-					<div class="our-team">
-					<img alt="team-img" src="assets/img/3.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
-					<h4><a href="">Kalindu Bawantha</a></h4>
-						<p>At erat pellentesque adipiscing
-								commodo elit.</p>
-								<ul class="social-media">
-								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
-								<li><a href=""><i class="fab fa-instagram"></i></a></li>
-								<li><a href=""><i class="fab fa-twitter"></i></a></li>
-							</ul>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
-					<div class="our-team">
-					<img alt="team-img" src="assets/img/4.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
-					<h4><a href="">Himashi</a></h4>
-						<p>At erat pellentesque adipiscing
-								commodo elit.</p>
-								<ul class="social-media">
-								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
-								<li><a href=""><i class="fab fa-instagram"></i></a></li>
-								<li><a href=""><i class="fab fa-twitter"></i></a></li>
-							</ul>
-					</div>
-				</div>
-				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
-					<div class="our-team">
-					<img alt="team-img" src="assets/img/5.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
-					<h4><a href="">Hiruni</a></h4>
-						<p>At erat pellentesque adipiscing
-								commodo elit.</p>
-								<ul class="social-media">
-								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
-								<li><a href=""><i class="fab fa-instagram"></i></a></li>
-								<li><a href=""><i class="fab fa-twitter"></i></a></li>
-							</ul>
+				<!-- Team Member 2 -->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team text-center">
+						<img alt="team-img" src="assets/img/6.jfif" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4 class="mt-3"><a href="#">Abzan Iqbal</a></h4>
+						
 					</div>
 				</div>
 
+				<!-- Team Member 3 -->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team text-center">
+						<img alt="team-img" src="assets/img/4.jpg" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4 class="mt-3"><a href="#">Athistakumar</a></h4>
+						
+					</div>
+				</div>
+
+				<!-- Team Member 4 -->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team text-center">
+						<img alt="team-img" src="assets/img/2.jfif" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4 class="mt-3"><a href="#">Sachintha</a></h4>
+					
+					</div>
+				</div>
+
+				<!-- Team Member 5 -->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team text-center">
+						<img alt="team-img" src="assets/img/7.jfif" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4 class="mt-3"><a href="#">Nuha Yousuf</a></h4>
+						
+					</div>
+				</div>
+
+				<!-- Team Member 6 -->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team text-center">
+						<img alt="team-img" src="assets/img/3.jfif" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4 class="mt-3"><a href="#">Kalindu Bawantha</a></h4>
+					
+					</div>
+				</div>
+
+				<!-- Team Member 7 -->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team text-center">
+						<img alt="team-img" src="assets/img/4.jfif" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4 class="mt-3"><a href="#">Himashi</a></h4>
+					
+					</div>
+				</div>
+
+				<!-- Team Member 8 -->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team text-center">
+						<img alt="team-img" src="assets/img/5.jfif" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4 class="mt-3"><a href="#">Hiruni</a></h4>
+					
+				</div>
 			</div>
+
 		</div>
 	</section>
 
 	
 	<!-- subscribe-section -->
-	<section class="subscribe-section about gap" style="background-image: url(assets/img/background-img.jpg);" >
+	<!-- <section class="subscribe-section about gap" style="background-image: url(assets/img/background-img.jpg);" >
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -280,6 +250,6 @@
 			</div>
 		</div>
 	</section>
-	
+	 -->
 
 @endsection

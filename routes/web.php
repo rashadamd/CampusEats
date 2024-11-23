@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Auth;
 
 // landing
 //Route::view('/','index');
-Route::view('/about','about');
+// Route::view('/about','about');
 // // Route::view('/login','login')->name('login');
 // // Route::view('/register','register');
 
@@ -45,6 +45,7 @@ Route::view('/about','about');
 // Route::post('/about', [UserController::class, 'about'])->name('about');
 
 Route::get('/', [IndexController::class, 'showLandingPage'])->name('index');
+Route::get('/about', [IndexController::class, 'about'])->name('about');
 
 Route::post('/registerpost', [UserController::class, 'register'])->name('registerpost');
 Route::post('/loginpost', [UserController::class, 'login'])->name('loginpost');

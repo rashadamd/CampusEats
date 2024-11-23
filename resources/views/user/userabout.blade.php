@@ -137,33 +137,29 @@
 							<h2>Service shows good taste.</h2>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="count-time">
-								<h2 class="timer count-title count-number" data-to="976" data-speed="2000">976</h2>
-									<p>Satisfied<br>
-									Customer</p>
-						</div>
+					
+				<!-- Best Restaurants -->
+				<div class="col-lg-6 col-md-6 col-sm-6" data-aos="flip-up" data-aos-delay="300" data-aos-duration="400">
+					<div class="count-time">
+						<h2 class="timer count-title count-number" data-to="{{ $restaurantCount }}" data-speed="2000">{{ $restaurantCount }}</h2>
+						<p>Best<br>Restaurants</p>
+					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6" data-aos="flip-up"  data-aos-delay="300" data-aos-duration="400">
-						<div class="count-time">
-								<h2 class="timer count-title count-number" data-to="12" data-speed="2000">12</h2>
-									<p>Best<br>
-											Restaurants</p>
-						</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="count-time sp">
-								<h2 class="timer count-title count-number" data-to="1" data-speed="2000">1</h2>
-								<span>k+</span>
-									<p>Food<br>
-											Delivered</p>
-						</div>
+
+				<!-- Food Delivered -->
+				<div class="col-lg-6 col-md-6 col-sm-6" data-aos="flip-up" data-aos-delay="300" data-aos-duration="400">
+					<div class="count-time sp">
+						<h2 class="timer count-title count-number" data-to="{{ $foodDeliveredCount }}" data-speed="2000">{{ $foodDeliveredCount }}</h2>
+						<p>Food<br>Delivered</p>
+					</div>
 				</div>
 			</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+							
 	
 		<!-- Our Team Section -->
 	<section class="our-team-section gap">
@@ -172,39 +168,25 @@
 				<h2>Our team</h2>
 			</div>
 			<div class="row">
-			<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500" style="margin-bottom: 20px;">
-					<div class="our-team">
-						<img alt="team-img" src="assets/img/1.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
-						<h4><a href="">Rashad Ahamed</a></h4>
-						<p>At erat pellentesque adipiscing
-								commodo elit.</p>
-							<ul class="social-media">
-								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
-								<li><a href=""><i class="fab fa-instagram"></i></a></li>
-								<li><a href=""><i class="fab fa-twitter"></i></a></li>
+				<!-- Team Member 1 -->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team text-center">
+						<img alt="team-img" src="assets/img/1.jfif" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4 class="mt-3"><a href="#">Rashad Ahamed</a></h4>
+						<ul class="social-media">
+								<li><a href="https://www.facebook.com/i.am.Rashad.Ahamed"><i class="fab fa-facebook-f"></i></i></a></li>
+								<li><a href="https://www.instagram.com/rashad_.amd"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="https://x.com/Rashadamd"><i class="fab fa-twitter"></i></a></li>
 							</ul>
 					</div>
 				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
-					<div class="our-team">
-					<img alt="team-img" src="assets/img/6.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
-					<h4><a href="">Abzan Iqbal</a></h4>
-						<p>At erat pellentesque adipiscing
-								commodo elit.</p>
-								<ul class="social-media">
-								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
-								<li><a href=""><i class="fab fa-instagram"></i></a></li>
-								<li><a href=""><i class="fab fa-twitter"></i></a></li>
-							</ul>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
-					<div class="our-team">
-					<img alt="team-img" src="assets/img/2.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
-					<h4><a href="">Athistakumar</a></h4>
-						<p>At erat pellentesque adipiscing
-								commodo elit.</p>
-								<ul class="social-media">
+
+				<!-- Team Member 2 -->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team text-center">
+						<img alt="team-img" src="assets/img/6.jfif" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4 class="mt-3"><a href="#">Abzan Iqbal</a></h4>
+						<ul class="social-media">
 								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
 								<li><a href=""><i class="fab fa-instagram"></i></a></li>
 								<li><a href=""><i class="fab fa-twitter"></i></a></li>
@@ -212,52 +194,12 @@
 					</div>
 				</div>
 
-				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500" style="margin-bottom: 20px;">
-					<div class="our-team">
-					<img alt="team-img" src="assets/img/7.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
-					<h4><a href="">Nuha Yousuf</a></h4>
-						<p>At erat pellentesque adipiscing
-								commodo elit.</p>
-								<ul class="social-media">
-								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
-								<li><a href=""><i class="fab fa-instagram"></i></a></li>
-								<li><a href=""><i class="fab fa-twitter"></i></a></li>
-							</ul>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
-					<div class="our-team">
-					<img alt="team-img" src="assets/img/3.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
-					<h4><a href="">Kalindu Bawantha</a></h4>
-						<p>At erat pellentesque adipiscing
-								commodo elit.</p>
-								<ul class="social-media">
-								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
-								<li><a href=""><i class="fab fa-instagram"></i></a></li>
-								<li><a href=""><i class="fab fa-twitter"></i></a></li>
-							</ul>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
-					<div class="our-team">
-					<img alt="team-img" src="assets/img/4.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
-					<h4><a href="">Himashi</a></h4>
-						<p>At erat pellentesque adipiscing
-								commodo elit.</p>
-								<ul class="social-media">
-								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
-								<li><a href=""><i class="fab fa-instagram"></i></a></li>
-								<li><a href=""><i class="fab fa-twitter"></i></a></li>
-							</ul>
-					</div>
-				</div>
-				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500">
-					<div class="our-team">
-					<img alt="team-img" src="assets/img/5.jfif" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;">
-					<h4><a href="">Hiruni</a></h4>
-						<p>At erat pellentesque adipiscing
-								commodo elit.</p>
-								<ul class="social-media">
+				<!-- Team Member 3 -->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team text-center">
+						<img alt="team-img" src="assets/img/4.jpg" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4 class="mt-3"><a href="#">Athistakumar</a></h4>
+						<ul class="social-media">
 								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
 								<li><a href=""><i class="fab fa-instagram"></i></a></li>
 								<li><a href=""><i class="fab fa-twitter"></i></a></li>
@@ -265,12 +207,76 @@
 					</div>
 				</div>
 
+				<!-- Team Member 4 -->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team text-center">
+						<img alt="team-img" src="assets/img/2.jfif" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4 class="mt-3"><a href="#">Sachintha</a></h4>
+						<ul class="social-media">
+								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
+								<li><a href=""><i class="fab fa-instagram"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter"></i></a></li>
+							</ul>
+					</div>
+				</div>
+
+				<!-- Team Member 5 -->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team text-center">
+						<img alt="team-img" src="assets/img/7.jfif" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4 class="mt-3"><a href="#">Nuha Yousuf</a></h4>
+						<ul class="social-media">
+								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
+								<li><a href=""><i class="fab fa-instagram"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter"></i></a></li>
+							</ul>
+					</div>
+				</div>
+
+				<!-- Team Member 6 -->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team text-center">
+						<img alt="team-img" src="assets/img/3.jfif" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4 class="mt-3"><a href="#">Kalindu Bawantha</a></h4>
+						<ul class="social-media">
+								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
+								<li><a href=""><i class="fab fa-instagram"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter"></i></a></li>
+							</ul>
+					</div>
+				</div>
+
+				<!-- Team Member 7 -->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team text-center">
+						<img alt="team-img" src="assets/img/4.jfif" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4 class="mt-3"><a href="#">Himashi</a></h4>
+						<ul class="social-media">
+								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
+								<li><a href=""><i class="fab fa-instagram"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter"></i></a></li>
+							</ul>
+					</div>
+				</div>
+
+				<!-- Team Member 8 -->
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="our-team text-center">
+						<img alt="team-img" src="assets/img/5.jfif" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
+						<h4 class="mt-3"><a href="#">Hiruni</a></h4>
+						<ul class="social-media">
+								<li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
+								<li><a href=""><i class="fab fa-instagram"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter"></i></a></li>
+							</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
 
-	<section class="service-shows gap" data-aos="fade-up"  data-aos-delay="200" data-aos-duration="300">
+	<!-- <section class="service-shows gap" data-aos="fade-up"  data-aos-delay="200" data-aos-duration="300">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xl-4 col-lg-12">
@@ -320,7 +326,6 @@
 		</div>
 	</section>
 	
-	<!-- subscribe-section -->
 	<section class="subscribe-section about gap" style="background-image: url(user/assets/img/background-img.jpg);" >
 		<div class="container">
 			<div class="row">
@@ -336,7 +341,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	
  
 @endsection
