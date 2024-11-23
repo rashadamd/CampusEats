@@ -25,7 +25,7 @@
 						<img alt="man" src="user/assets/img/photo-1.png">
 				
 						<div class="wilmington location-restaurant" style="top: 30%; left: 70%;">
-							<i class="fas fa-location-dot"></i>
+							<i class="fas fa-location-dot">{{ $restaurantCount }}</i>
 							<div>
 								<h6>Restaurant</h6>
 								<p>In Your city</p>
@@ -78,8 +78,7 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6" data-aos="flip-up"  data-aos-delay="200" data-aos-duration="300">
 						<div class="city-restaurants">
-							<h2>12 <span style="color: #f5ae47;"> Best </span> <span style="color: #f65f5f;"> Restaurants  </span> in Your City</h2>
-							<p>Magna sit amet purus gravida quis blandit turpis cursus. Venenatis tellus in metus vulputate.</p>
+							<h2>{{ $restaurantCount }} <span style="color: #f5ae47;"> Best </span> <span style="color: #f65f5f;"> Restaurants  </span> in Your City</h2>
 						</div>
 				</div>
 
@@ -134,24 +133,20 @@
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12"  data-aos-delay="300" data-aos-duration="400">
 						<div class="count-time">
-								<h2 class="timer count-title count-number" data-to="976" data-speed="6000">976</h2>
-									<p>Satisfied
-									Customer</p>
+								<h2 class="timer count-title count-number" data-to="{{ $satisfiedCustomerCount }}" data-speed="1000">{{ $satisfiedCustomerCount }}</h2>
+									<p>Satisfied Customer</p>
 						</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12"  data-aos-delay="400" data-aos-duration="500">
 						<div class="count-time">
-								<h2 class="timer count-title count-number" data-to="1520" data-speed="6000">1520</h2>
-									<p>Best
-											Restaurants</p>
+								<h2 class="timer count-title count-number" data-to="{{ $restaurantCount }}" data-speed="1000">{{ $restaurantCount }}</h2>
+									<p>Best Restaurants</p>
 						</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12"  data-aos-delay="500" data-aos-duration="600">
 						<div class="count-time sp">
-								<h2 class="timer count-title count-number" data-to="650" data-speed="6000">650</h2>
-								
-									<p>Food 
-											Delivered</p>
+								<h2 class="timer count-title count-number" data-to="{{ $foodDeliveredCount }}" data-speed="1000">{{ $foodDeliveredCount }}</h2>
+									<p>Food Delivered</p>
 						</div>
 				</div>
 			</div>
@@ -226,7 +221,7 @@
 	
 
 	<!-- subscribe-section -->
-	<section class="subscribe-section gap" style="background:#fcfcfc">
+	<!-- <section class="subscribe-section gap" style="background:#fcfcfc">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-6" data-aos="flip-up"  data-aos-delay="200" data-aos-duration="300">
@@ -246,6 +241,6 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 @endsection

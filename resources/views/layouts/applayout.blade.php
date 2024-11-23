@@ -191,7 +191,6 @@
 
 						</a>
 						<h2>The Best Restaurants in Your  Home</h2>
-						<p>Vitae congue mauris rhoncus aenean. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Tempus egestas sed sed risus pretium quam.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12">

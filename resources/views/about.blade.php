@@ -35,9 +35,7 @@
 				<div class="offset-xl-1 col-lg-5 col-md-12 col-sm-12" data-aos="flip-up"  data-aos-delay="400" data-aos-duration="500">
 					<div class="our-mission-text">
 						<h2>Our mission is to save you time</h2>
-							<p>Viverra vitae congue eu consequat ac felis. Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Velit ut tortor pretium viverra suspendisse potenti nullam ac tortor.<br><br>
-
-							Eget egestas purus viverra accumsan in nisl nisi scelerisque. Tincidunt augue interdum velit euismod in pellentesque.</p>
+							<p>Our goal is to simplify your life by offering seamless solutions that save you valuable time, letting you focus on what truly matters</p>
 					</div>
 				</div>
 			</div>
@@ -53,7 +51,7 @@
 						<img class="off" alt="icon" src="assets/img/service-icon-1.svg">
 
 						<h3>Free Delivery</h3>
-								<p>Cras fermentum odio eu feugiat pretium nibh ipsum. Ut faucibus pulvinar elementum consequat integer enim neque volutpat.</p>
+								<p>Enjoy the convenience of free delivery on every order, bringing your favorite meals straight to your doorstep without any extra cost.</p>
 					</div>
 				</div>
 				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12" data-aos="flip-up"  data-aos-delay="300" data-aos-duration="400">
@@ -62,7 +60,7 @@
 						<img class="off" alt="icon" src="assets/img/service-icon-4.svg">
 
 						<h3>Save Your Time</h3>
-								<p>Vulputate dignissim suspendisse in est ante in nibh mauris. Pretium nibh ipsum consequat nisl vel pretium lectus quam id.</p>
+								<p>Skip the hassle of waiting—our efficient service ensures that your orders are processed quickly, saving you precious time every day</p>
 					</div>
 				</div>
 				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12" data-aos="flip-up"  data-aos-delay="400" data-aos-duration="500">
@@ -71,7 +69,7 @@
 						<img class="off" alt="icon" src="assets/img/service-icon-6.svg">
 
 						<h3>Regular Discounts</h3>
-								<p>Nec tincidunt praesent semper feugiat nibh. Feugiat in ante metus dictum. Sapien nec sagittis aliquam malesuada bibendum arcu.</p>
+								<p>Take advantage of our regular discounts and offers, making delicious meals even more affordable for you.</p>
 					</div>
 				</div>
 				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12" data-aos="flip-up"  data-aos-delay="500" data-aos-duration="600">
@@ -80,14 +78,14 @@
 						<img class="off" alt="icon" src="assets/img/service-icon-8.svg">
 
 						<h3>Variety Food</h3>
-								<p>Molestie a iaculis at erat pellentesque. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl.</p>
+								<p>Discover a diverse menu featuring cuisines from around the world, offering something for every taste and craving.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- video-section -->
-	<section class="video-section gap">
+	<!-- <section class="video-section gap">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-6" data-aos="fade-up"  data-aos-delay="200" data-aos-duration="300">
@@ -106,7 +104,7 @@
 				
 			</div>
 		</div>
-	</section>
+	</section> -->
 	
 	<!-- about-counters-section -->
 	<section class="about-counters-section gap" style="background-image: url(user/assets/img/background.png);">
@@ -158,11 +156,7 @@
 					<div class="our-team text-center">
 						<img alt="team-img" src="assets/img/1.jfif" class="img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;">
 						<h4 class="mt-3"><a href="#">Rashad Ahamed</a></h4>
-						<ul class="social-media">
-								<li><a href="https://www.facebook.com/i.am.Rashad.Ahamed"><i class="fab fa-facebook-f"></i></i></a></li>
-								<li><a href="https://www.instagram.com/rashad_.amd"><i class="fab fa-instagram"></i></a></li>
-								<li><a href="https://x.com/Rashadamd"><i class="fab fa-twitter"></i></a></li>
-							</ul>
+						
 					</div>
 				</div>
 

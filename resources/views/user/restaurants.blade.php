@@ -13,7 +13,7 @@
 									<li class="two"><a href="restaurants"><i class="fas fa-right-long"></i>Restaurants</a></li>
 								</ul>
 								<h2 style="color: #fff;">Restaurants</h2>
-								<p>Egestas sed tempus urna et pharetra pharetra massa. Fermentum posuere urna nec tincidunt praesent semper.</p>
+								<p>Explore a curated selection of top-rated restaurants, each offering unique menus, exceptional flavors, and quality service to satisfy your cravings.</p>
 								
 							</div>
 						</div>
@@ -52,7 +52,7 @@
 	</section>
 	
 	<!-- subscribe-section -->
-	<section class="subscribe-section gap" style="background:#fcfcfc">
+	<!-- <section class="subscribe-section gap" style="background:#fcfcfc">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-6" data-aos="flip-up"  data-aos-delay="200" data-aos-duration="300">
@@ -72,6 +72,6 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 @endsection

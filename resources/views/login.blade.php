@@ -2,9 +2,6 @@
 @section('title','CampusEats - Login')
 @section('content')
 
-
-
-
 	<!-- hero-section -->
 	<section class="hero-section about checkout gap" style="background-image: url(assets/img/x2.png)">
 			<div class="container">
@@ -54,13 +51,6 @@
 			</div>
 		</div>
 	</section>
-	<div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
-  <div class="d-flex">
-    <div class="toast-body">
-      Hello, world! This is a toast message.
-    </div>
-    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-  </div>
-</div>
+
 
 @endsection

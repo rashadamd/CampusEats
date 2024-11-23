@@ -170,7 +170,7 @@
 				
 				<div class="copyright">
 					<p><strong>CampusEats</strong> © 2024 All Rights Reserved</p>
-					<p class="fs-12">Made with by Group 3</p>
+					<p class="fs-12">Made with <span class="heart"></span>  by Group 3</p>
 				</div>
 			</div>
         </div>

@@ -28,7 +28,7 @@
 						<img alt="man" src="assets/img/photo-1.png">
 				
 						<div class="wilmington location-restaurant" style="top: 30%; left: 70%;">
-							<i class="fas fa-location-dot"></i>
+							<i class="fas fa-location-dot">{{ $restaurantCount }}</i>
 							<div>
 								<h6>Restaurants</h6>
 								<p>In Your city</p>
@@ -127,9 +127,7 @@
 				</div>
 				<div class="col-lg-6 offset-lg-1" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
 					<div class="food-content-section">
-						<h2 style="color:white;">Food from your favorite restaurants
-								to your table</h2>
-								<p>Pretium lectus quam id leo in vitae turpis massa sed. Lorem donec massa sapien faucibus et molestie. Vitae elementum curabitur vitae nunc.</p>
+						<h2 style="color:white;">Food from your favorite restaurants to your table</h2>
 								<a href="login" class="button button-2">Order Now</a>
 					</div>
 				</div>
@@ -151,7 +149,7 @@
 			<!-- Satisfied Customers -->
 			<div class="col-lg-3 col-md-6 col-sm-12" data-aos-delay="300" data-aos-duration="400">
 				<div class="count-time">
-					<h2 class="timer count-title count-number" data-to="{{ $satisfiedCustomerCount }}" data-speed="6000">
+					<h2 class="timer count-title count-number" data-to="{{ $satisfiedCustomerCount }}" data-speed="1000">
 						{{ $satisfiedCustomerCount }}
 					</h2>
 					<p>Satisfied Customer</p>
@@ -161,7 +159,7 @@
 			<!-- Best Restaurants -->
 			<div class="col-lg-3 col-md-6 col-sm-12" data-aos-delay="400" data-aos-duration="500">
 				<div class="count-time">
-					<h2 class="timer count-title count-number" data-to="{{ $restaurantCount }}" data-speed="6000">
+					<h2 class="timer count-title count-number" data-to="{{ $restaurantCount }}" data-speed="1000">
 						{{ $restaurantCount }}
 					</h2>
 					<p>Best Restaurants</p>
@@ -171,7 +169,7 @@
 			<!-- Food Delivered -->
 			<div class="col-lg-3 col-md-6 col-sm-12" data-aos-delay="500" data-aos-duration="600">
 				<div class="count-time sp">
-					<h2 class="timer count-title count-number" data-to="{{ $foodDeliveredCount }}" data-speed="6000">
+					<h2 class="timer count-title count-number" data-to="{{ $foodDeliveredCount }}" data-speed="1000">
 						{{ $foodDeliveredCount }}
 					</h2>
 					<p>Food Delivered</p>
@@ -258,7 +256,6 @@
 							<div class="about-text">
 								
 								<h2 style="color: #fff;">Contact us</h2>
-								<p>Egestas sed tempus urna et pharetra pharetra massa. Fermentum posuere urna nec tincidunt praesent semper.</p>
 							</div>
 							
 							<div class="row">
@@ -272,7 +269,7 @@
 									<div class="address">
 										<i class="fas fa-envelope"></i>
 										<a href="mailto:campuseats@mail.com"><h6>campuseats@mail.com</h6></a>
-										<span>Lorem ipsum dolor sit.</span>
+										<span>Email</span>
 										
 									</div>
 								</div>
@@ -281,7 +278,7 @@
 									<div class="address">
 										<i class="fas fa-phone"></i>
 										<a href="callto:+94799999999"><h6>+94 79 999 9999</h6></a>
-										<span>Et netus et malesuada</span>
+										<span>Mobile No.</span>
 										
 									</div>
 								</div>

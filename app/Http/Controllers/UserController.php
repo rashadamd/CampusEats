@@ -16,7 +16,9 @@ class UserController extends Controller
         public function userindex()
         {
             $user = Auth::user();
-            return view('user.userindex',compact('user'));
+            $restaurantCount = User::where('client', 'restaurant')->count();
+
+            return view('user.userindex',compact('user','restaurantCount'));
         }
 
         public function profile()
