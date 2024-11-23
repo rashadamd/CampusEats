@@ -93,10 +93,4 @@ Route::middleware('auth')->group(function () {
     
 });
 
-// but acccordign to my above whole.
-// need to retrive from databse and show here.
-// go with the previous messages of mine.
-// users table has userid. it is with restid and userid in same column. by differentitaing with role as clients.
-// and menus table has the restid a working one.
-// as you see here give properly.
 
