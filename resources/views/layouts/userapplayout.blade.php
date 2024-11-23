@@ -81,11 +81,6 @@
 								</g>
 							</svg>
 						</a>
-
-						<div class="extras bag">
-	           				<a href="checkout" class="menu-btn"><i class="fas fa-bag-shopping"></i></a>
-		                		<div class="bar-menu"><i class="fas fa-bars"></i></div>
-						</div>
 					</div>
 				</div>
 
@@ -103,7 +98,6 @@
 				          <a href="restaurants">Restaurants</a>
 				          <div class="dropdown">
 				            <a href="restaurants">Restaurants</a>
-				            <a href="checkout">Checkout</a>
 				          </div>
 				        </li>
 				      </ul>
@@ -168,9 +162,7 @@
                   <li class="menu-item-has-children"><a href="JavaScript:void(0)">Restaurants</a>
 
 					<ul class="sub-menu">
-
                       <li><a href="restaurants">Restaurants</a></li>
-				      <li><a href="checkout">Checkout</a></li>
                     </ul>
 
                    </li>

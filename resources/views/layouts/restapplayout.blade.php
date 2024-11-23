@@ -173,7 +173,7 @@
 							<li><a href="dashboard">Dashboard </a></li>
 							<li><a href="orderpage">Orders</a></li>
 							
-							<li><a href="review">Review</a></li>	
+							<!-- <li><a href="review">Review</a></li>	 -->
 						</ul>
 
                     </li>

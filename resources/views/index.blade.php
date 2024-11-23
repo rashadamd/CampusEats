@@ -173,7 +173,7 @@
 	</section>
 	
 	<!-- reviews-sections -->
-	<section class="reviews-sections gap" id="reviews">
+	<!-- <section class="reviews-sections gap" id="reviews">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-xl-6 col-lg-12" data-aos="fade-up"  data-aos-delay="200" data-aos-duration="300">
@@ -236,7 +236,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- contacts section -->
 	<section class="hero-section about gap" style="background-image: url(assets/img/x2.png)"  id="contacts">

@@ -15,113 +15,96 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="table-responsive">
+                               
                                     <table class="table table-sm mb-0">
                                         <thead>
                                             <tr>
-                                                <th class="align-middle">
-                                                    <div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="checkAll">
-														<label class="form-check-label" for="checkAll"></label>
-													</div>
-                                                </th>
+                                      
                                                 <th class="align-middle">Order</th>
                                                 <th class="align-middle pe-7">Date</th>
                                                 <th class="align-middle" style="min-width: 12.5rem;">Ship To</th>
                                                 <th class="align-middle text-end">Status</th>
                                                 <th class="align-middle text-end">Amount</th>
-                                                <th class="no-sort"></th>
+                                                <th class="align-middle text-end">Select Status</th>
                                             </tr>
                                         </thead>
+                   
+
                                         <tbody id="orders">
+                                            @foreach($orders as $order)
                                             <tr class="btn-reveal-trigger">
                                                 <td class="py-2">
-                                                    <div class="form-check custom-checkbox checkbox-success">
-														<input type="checkbox" class="form-check-input" id="checkbox">
-														<label class="form-check-label" for="checkbox"></label>
-													</div>
+                                                    <strong>#{{ $order->orderid }}</strong> by <strong>{{ $order->customer_name }}</strong><br />
+                                                    <a href="mailto:{{ $order->customer_email }}">{{ $order->customer_email }}</a><br />
+                                                    <a href="tel:{{ $order->customer_mobile }}">{{ $order->customer_mobile }}</a>
                                                 </td>
-                                                <td class="py-2">
-                                                    <a href="productorder">
-                                                        <strong>#181</strong></a> by <strong>Ricky
-                                                        Antony</strong><br /><a href="mailto:ricky@example.com">ricky@example.com</a></td>
-                                                <td class="py-2">20/04/2020</td>
-                                                <td class="py-2">Ricky Antony, 2392 Main Avenue, Penasauka, New Jersey 02149
-                                                    <p class="mb-0 text-500">Via Flat Rate</p>
-                                                </td>
-                                                <td class="py-2 text-end"><span class="badge badge-success">Completed<span class="ms-1 fa fa-check"></span></span>
+                                                <td class="py-2">{{ \Carbon\Carbon::parse($order->date)->format('d/m/Y') }}</td>
+                                                <td class="py-2">{{ $order->customer_address }}</td>
+                                                <td class="py-2 text-end">
+                                                    @if($order->status == 'completed')
+                                                        <span class="badge badge-success">Completed<span class="ms-1 fa fa-check"></span></span>
+                                                    @elseif($order->status == 'processing')
+                                                        <span class="badge badge-warning">Processing<span class="ms-1 fa fa-spinner fa-spin"></span></span>
+                                                    @elseif($order->status == 'pending')
+                                                        <span class="badge badge-danger">Pending<span class="ms-1 fa fa-clock"></span></span>
+                                                    @endif
                                                 </td>
 
-                                                <td class="py-2 text-end">$99
-                                                </td>
-                                                <td class="py-2 text-end">
-                                                    <div class="dropdown text-sans-serif"><button class="btn btn-primary tp-btn-light sharp" type="button" id="order-dropdown-0" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg></span></button>
-                                                        <div class="dropdown-menu dropdown-menu-end border py-0" aria-labelledby="order-dropdown-0">
-                                                            <div class="py-2"><a class="dropdown-item" href="javascript:void(0);">Completed</a><a class="dropdown-item" href="javascript:void(0);">Processing</a><a class="dropdown-item" href="javascript:void(0);">Pending</a>
-                                                                <!-- <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a> -->
+                                                <td class="py-2 text-end">${{ $order->amount }}</td>
+                                                <!-- <td class="py-2 text-end">
+                                                    <div class="dropdown text-sans-serif">
+                                                        <button class="btn btn-primary tp-btn-light sharp" type="button" id="order-dropdown-{{ $order->orderid }}" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1">
+                                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                        <rect x="0" y="0" width="24" height="24"></rect>
+                                                                        <circle fill="#000000" cx="5" cy="12" r="2"></circle>
+                                                                        <circle fill="#000000" cx="12" cy="12" r="2"></circle>
+                                                                        <circle fill="#000000" cx="19" cy="12" r="2"></circle>
+                                                                    </g>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-end border py-0" aria-labelledby="order-dropdown-{{ $order->orderid }}">
+                                                            <div class="py-2">
+                                                                <a class="dropdown-item status-option" href="javascript:void(0);" data-order-id="{{ $order->orderid }}" data-status="completed">Completed</a>
+                                                                <a class="dropdown-item status-option" href="javascript:void(0);" data-order-id="{{ $order->orderid }}" data-status="processing">Processing</a>
+                                                                <a class="dropdown-item status-option" href="javascript:void(0);" data-order-id="{{ $order->orderid }}" data-status="pending">Pending</a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="btn-reveal-trigger">
-                                                <td class="py-2">
-                                                    <div class="form-check custom-checkbox ">
-														<input type="checkbox" class="form-check-input" id="checkbox1">
-														<label class="form-check-label" for="checkbox1"></label>
-													</div>
-                                                </td>
-                                                <td class="py-2">
-                                                    <a href="productorder">
-                                                        <strong>#182</strong></a> by <strong>Kin Rossow</strong><br /><a href="mailto:kin@example.com">kin@example.com</a></td>
-                                                <td class="py-2">20/04/2020</td>
-                                                <td class="py-2">Kin Rossow, 1 Hollywood Blvd,Beverly Hills, California 90210
-                                                    <p class="mb-0 text-500">Via Free Shipping
-                                                    </p>
-                                                </td>
-                                                <td class="py-2 text-end"><span class="badge badge-primary">Processing<span class="ms-1 fa fa-redo"></span></span>
-                                                </td>
-                                                <td class="py-2 text-end">$120
-                                                </td>
+                                                </td> -->
+
                                                 <td class="py-2 text-end">
-                                                    <div class="dropdown text-sans-serif"><button class="btn btn-primary tp-btn-light sharp" type="button" id="order-dropdown-1" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg></span></button>
-                                                        <div class="dropdown-menu dropdown-menu-end border py-0" aria-labelledby="order-dropdown-1">
-                                                            <div class="py-2"><a class="dropdown-item" href="javascript:void(0);">Completed</a><a class="dropdown-item" href="javascript:void(0);">Processing</a><a class="dropdown-item" href="javascript:void(0);">Pending</a>
-                                                                <!-- <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a> -->
+                                                    @if($order->status === 'completed')
+                                                        <button class="btn btn-success tp-btn-light sharp" type="button" disabled>
+                                                            {{ ucfirst($order->status) }}
+                                                        </button>
+                                                    @else
+                                                        <div class="dropdown text-sans-serif">
+                                                            <button class="btn btn-primary tp-btn-light sharp dropdown-toggle" type="button" id="order-dropdown-{{ $order->orderid }}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                {{ ucfirst($order->status) }}
+                                                            </button>
+                                                            <div class="dropdown-menu dropdown-menu-end border py-0" aria-labelledby="order-dropdown-{{ $order->orderid }}">
+                                                                <div class="py-2">
+                                                                    @if($order->status !== 'completed')
+                                                                        <a class="dropdown-item update-status" href="javascript:void(0);" data-orderid="{{ $order->orderid }}" data-status="completed">Completed</a>
+                                                                    @endif
+                                                                    @if($order->status !== 'processing')
+                                                                        <a class="dropdown-item update-status" href="javascript:void(0);" data-orderid="{{ $order->orderid }}" data-status="processing">Processing</a>
+                                                                    @endif
+                                                                    @if($order->status !== 'pending')
+                                                                        <a class="dropdown-item update-status" href="javascript:void(0);" data-orderid="{{ $order->orderid }}" data-status="pending">Pending</a>
+                                                                    @endif
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    @endif
                                                 </td>
+
+
                                             </tr>
-                                            <tr class="btn-reveal-trigger">
-                                                <td class="py-2">
-                                                    <div class="form-check custom-checkbox checkbox-secondary">
-														<input type="checkbox" class="form-check-input" id="checkbox2">
-														<label class="form-check-label" for="checkbox2"></label>
-													</div>
-                                                </td>
-                                                <td class="py-2">
-                                                    <a href="productorder>
-                                                        <strong>#183</strong></a> by <strong>Merry
-                                                        Diana</strong><br /><a href="mailto:merry@example.com">merry@example.com</a></td>
-                                                <td class="py-2">30/04/2020</td>
-                                                <td class="py-2">Merry Diana, 1 Infinite Loop, Cupertino, California 90210
-                                                    <p class="mb-0 text-500">Via Link Road</p>
-                                                </td>
-                                                <td class="py-2 text-end"><span class="badge badge-danger">Pending<span class="ms-1 fa fa-exclamation-triangle"></span></span></td>
-                                                <td class="py-2 text-end">$70
-                                                </td>
-                                                <td class="py-2 text-end">
-                                                    <div class="dropdown text-sans-serif"><button class="btn btn-primary tp-btn-light sharp" type="button" id="order-dropdown-2" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg></span></button>
-                                                        <div class="dropdown-menu dropdown-menu-end border py-0" aria-labelledby="order-dropdown-2">
-                                                            <div class="py-2"><a class="dropdown-item" href="javascript:void(0);">Completed</a><a class="dropdown-item" href="javascript:void(0);">Processing</a><a class="dropdown-item" href="javascript:void(0);">Pending</a>
-                                                            <!-- <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                           
-                                            
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>
@@ -130,5 +113,94 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+<!-- 
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const updateStatusLinks = document.querySelectorAll('.update-status');
+
+                updateStatusLinks.forEach(link => {
+                    link.addEventListener('click', function () {
+                        const orderId = this.getAttribute('data-orderid');
+                        const newStatus = this.getAttribute('data-status');
+
+                        fetch(`/update-order-status/${orderId}`, {
+                            method: 'POST',
+                            headers: {
+                                'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({ status: newStatus }),
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.success) {
+                                // Update dropdown button text
+                                document.getElementById(`order-dropdown-${orderId}`).textContent = newStatus.charAt(0).toUpperCase() + newStatus.slice(1);
+
+                                // Optionally, update the status badge dynamically
+                                const statusBadgeCell = document.querySelector(`#order-status-badge-${orderId}`);
+                                if (statusBadgeCell) {
+                                    statusBadgeCell.innerHTML = generateBadgeHTML(newStatus);
+                                }
+                            } else {
+                                alert('Error updating status. Please try again.');
+                            }
+                        })
+                        .catch(error => console.error('Error:', error));
+                    });
+                });
+
+                function generateBadgeHTML(status) {
+                    switch (status) {
+                        case 'completed':
+                            return '<span class="badge badge-success">Completed<span class="ms-1 fa fa-check"></span></span>';
+                        case 'processing':
+                            return '<span class="badge badge-warning">Processing<span class="ms-1 fa fa-spinner fa-spin"></span></span>';
+                        case 'pending':
+                            return '<span class="badge badge-secondary">Pending<span class="ms-1 fa fa-clock"></span></span>';
+                        default:
+                            return '';
+                    }
+                }
+            });
+        </script> -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const updateStatusLinks = document.querySelectorAll('.update-status');
+
+        updateStatusLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                const orderId = this.getAttribute('data-orderid');
+                const newStatus = this.getAttribute('data-status');
+
+                fetch(`/update-order-status/${orderId}`, {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ status: newStatus }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // Reload the page to reflect changes
+                        location.reload();
+                    } else {
+                        alert('Error updating status. Please try again.');
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            });
+        });
+    });
+</script>
+
+
 
 @endsection

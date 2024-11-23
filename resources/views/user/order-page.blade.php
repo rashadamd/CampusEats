@@ -18,7 +18,7 @@
 					</div>
 						
 				</div>
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-xl-12">
 						<div class="table-responsive">
 							<table class="table display mb-4 dataTablesCard order-table shadow-hover  card-table text-black" id="example5">
@@ -58,7 +58,54 @@
 							</table>
 						</div>
 					</div>
+				</div> -->
+
+				<!-- test -->
+				
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="table-responsive">
+							<table class="table display mb-4 dataTablesCard order-table shadow-hover  card-table text-black" id="example5">
+								<thead>
+									<tr>
+								
+										<th>Order ID</th>
+										<th>Date</th>
+										<th>Restaurant</th>
+										<th>Address</th>
+										<th>Quantity</th>
+										<th>Amount</th>
+										<th>Mobile No.</th>
+										<th>Status Order</th>
+										
+									</tr>
+								</thead>
+
+
+								<tbody>
+								@foreach($orders as $order)
+									<tr>
+									
+										<td>{{ $order->orderid }}</td>
+										<td class="wspace-no">{{ $order->date }}</td>
+										<td>{{ $order->restaurant }}</td>
+										<td class="text-ov">{{ $order->address }}</td>
+										<td class="text-ov">{{ $order->quantity }}</td> 
+										<td class="text-ov">${{ $order->amount }}</td>
+										<td class="text-ov">{{ $order->mobile_no }}</td>
+									
+									<td><span class="btn {{ $order->status === 'pending' ? 'bgl-danger text-danger' : 
+												($order->status === 'processing' ? 'bgl-warning text-warning' : 'bgl-success text-success') }} 
+												btn-rounded btn-sm">{{ ucfirst($order->status) }}</span></td>
+										
+									</tr>
+									@endforeach
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
+	
 				
             </div>
 

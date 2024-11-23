@@ -63,7 +63,7 @@ Route::middleware('auth')->group(function () {
     //Route::get('/restaurants-card-{id}',[ RestUserController::class, 'showCard']);
     Route::get('/restaurants-card-{id}',[ RestUserController::class, 'showRestCard']);
 
-    Route::get('/userorderpage', [UserController::class, 'orderpage'])->name('userorderpage');
+    //Route::get('/userorderpage', action: [UserController::class, 'orderpage'])->name('userorderpage');
     Route::get('/checkout', [UserController::class, 'checkout'])->name('checkout');
     Route::get('/userabout', [UserController::class, 'userabout'])->name('userabout');
     Route::get('/restaurantcard', [UserController::class, 'restaurantcard'])->name('restaurantcard');
@@ -71,9 +71,9 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/dashboard', [RestaurantController::class, 'dashboard'])->name('dashboard');
     Route::get('/profile', [RestaurantController::class, 'profile'])->name('profile');
-    Route::get('/orderpage', [RestaurantController::class, 'orderpage'])->name('orderpage');
+    // Route::get('/orderpage', [RestaurantController::class, 'orderpage'])->name('orderpage');
     Route::get('/productgrid', [MenuController::class, 'productgrid'])->name('productgrid');
-    Route::get('/productorder', [RestaurantController::class, 'productorder'])->name('productorder');
+    //Route::get('/productorder', [RestaurantController::class, 'productorder'])->name('productorder');
     Route::get('/review', [RestaurantController::class, 'review'])->name('review');
 
     Route::get('/menu', [RestaurantController::class, 'menu'])->name('menu');
@@ -83,5 +83,11 @@ Route::middleware('auth')->group(function () {
     Route::post('/checkout', [OrderController::class, 'store'])->name('checkout.store');
     Route::get('/checkout-{id}',[ OrderController::class, 'checkout']);
 
+    Route::get('/orderpage', [OrderController::class, 'orderpage'])->name('orderpage');
+    Route::get('/userorderpage', action: [OrderController::class, 'userorderpage'])->name('userorderpage');
+    Route::get('/productorder', [OrderController::class, 'productorder'])->name('productorder');
+    Route::post('/update-order-status/{orderid}', [OrderController::class, 'updateOrderStatus']);
+
+    
 });
 

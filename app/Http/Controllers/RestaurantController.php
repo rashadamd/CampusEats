@@ -33,7 +33,7 @@ class RestaurantController extends Controller
 
         $user = Auth::user();
        // dd($user);
-        return view('restaurants/order-page',compact('user'));
+        return view('restaurants.order-page',compact('user'));
     }
 
     public function productgrid()
@@ -49,7 +49,7 @@ class RestaurantController extends Controller
 
         $user = Auth::user();
        // dd($user);
-        return view('restaurants/product-order',compact('user'));
+        return view('restaurants.product-order',data: compact('user'));
     }
 
     public function review()
@@ -57,7 +57,7 @@ class RestaurantController extends Controller
 
         $user = Auth::user();
        // dd($user);
-        return view('restaurants/review',compact('user'));
+        return view('restaurants.review',compact('user'));
     }
 
 
@@ -66,6 +66,6 @@ class RestaurantController extends Controller
 
         $user = Auth::user();
        // dd($user);
-        return view('restaurants/menu',compact('user'));
+        return view('restaurants.menu',compact('user'));
     }
 }

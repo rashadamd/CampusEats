@@ -73,7 +73,7 @@
 		@endforeach
 
 			<!-- review -->
-			<div class="modal fade" id="reviewModal">
+			<!-- <div class="modal fade" id="reviewModal">
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -88,7 +88,6 @@
 								</div>
 								<div class="mb-3">
 									<div class="rating-widget mb-4 text-center">
-										<!-- Rating Stars Box -->
 										<div class="rating-stars">
 											<ul id="stars">
 												<li class="star" title="Poor" data-value="1">
@@ -118,7 +117,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
       </div>

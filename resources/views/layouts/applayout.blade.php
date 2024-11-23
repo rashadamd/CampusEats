@@ -98,9 +98,9 @@
 						<li class="navbar-dropdown">
 							<a href="/#foods">Food</a>
 						  </li>
-						  <li class="navbar-dropdown">
+						  <!-- <li class="navbar-dropdown">
 							<a href="/#reviews">Reviews</a>
-						  </li>
+						  </li> -->
 				        <li class="navbar-dropdown {{ Request::is('about') ? 'active' : '' }}">
 				          <a  href="/about">About Us</a>
 				        </li>
@@ -149,7 +149,7 @@
 						
 					 <li><a href="/#restaurants">Restaurants</a></li>
 					 <li><a href="/#foods">Food</a></li>
-					 <li><a href="/#reviews">Reviews</a></li> 
+					 <!-- <li><a href="/#reviews">Reviews</a></li>  -->
 					 <li><a href="/about">About Us</a></li>
 					</ul>
           <a href="JavaScript:void(0)" id="res-cross"></a>
