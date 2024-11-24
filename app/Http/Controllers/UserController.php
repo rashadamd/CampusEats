@@ -18,6 +18,8 @@ class UserController extends Controller
             $user = Auth::user();
             $restaurantCount = User::where('client', 'restaurant')->count();
 
+            
+
             return view('user.userindex',compact('user','restaurantCount'));
         }
 
@@ -72,14 +74,24 @@ class UserController extends Controller
              'mobileno' => 'required|string|max:11',
              'email' => 'required|string|email|max:255|unique:users,email',
              'uname' => 'required|string|max:255|unique:users,username',
-             'password' => 'required|string|min:6',
+             'password' => [
+                    'required',
+                    'string',
+                    'min:8',               
+                    'regex:/[A-Z]/',        
+                    'regex:/[a-z]/',       
+                    'regex:/[0-9]/',       
+                    'regex:/[@$!%*?&]/',   
+                ],
+             'password_confirmation' => 'required|same:password',
              'image' => 'required|image|mimes:jpeg,jpg,png|max:5000',
          ]);
 
-         //dd($validator);
+        //  dd($validator);
  
          if ($validator->fails()) {
-             return back()->withErrors($validator)->withInput();
+             return back()->withErrors($validator)->withInput()->with('failure', 'Unsuccessful registration');
+
          }
  
          // Handle file upload if image is provided
@@ -120,7 +132,6 @@ class UserController extends Controller
                 }
             }
 
-     
          // If authentication fails
          return back()->withErrors(['loginError' => 'Invalid username or password'])->withInput();
      }

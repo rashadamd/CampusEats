@@ -32,10 +32,35 @@
 </head>
 
 
-
-
 <body class="menu-layer">
-	
+
+@if (session('success'))
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast bg-success text-white" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true">
+    <div class="toast-header">
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      {{ session('success') }}
+    </div>
+  </div>
+</div>
+
+@endif
+
+@if (session('failure'))
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast bg-danger text-white" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+    <div class="toast-header">
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      {{ session('failure') }}
+    </div>
+  </div>
+</div>
+
+@endif
 	<!-- loader start-->
 
 	<div class="page-loader">
@@ -142,8 +167,6 @@
 					</a>
 				  </div>
 				<ul>
-					
-					
 
 					  <li><a href="/">Home</a></li>
 						
@@ -159,7 +182,7 @@
     </header>
 
 
-	
+
     @yield('content')
 
 	
@@ -247,3 +270,11 @@
  <script src="assets/js/jquery.scrollUp.min.js" type="64d060d09a2ef496689f6e54-text/javascript"></script> 
  
 </body>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const toastLiveExample = document.getElementById('liveToast');
+			const toast = new bootstrap.Toast(toastLiveExample);
+			toast.show(); // Automatically display the toast
+		});
+
+    </script>

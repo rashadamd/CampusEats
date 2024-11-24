@@ -77,7 +77,7 @@
 						@endif
 
 						<div class="row">
-							<div class="col-lg-6">
+							<div class="col-lg-12">
 								<input type="text" name="uname" placeholder="Username">
 								@if($errors->has('uname'))
 									<span class="error" style="color: red">
@@ -86,6 +86,9 @@
 								@endif
 							
 							</div>
+						</div>
+						<div class="row">
+
 							<div class="col-lg-6">
 								<input type="password" name="password" placeholder="Password">
 								@if($errors->has('password'))
@@ -94,6 +97,14 @@
 									</span>
 								@endif
 							
+							</div>
+							<div class="col-lg-6">
+								<input type="password" name="password_confirmation" placeholder="Confirm Password">
+								@if($errors->has('password_confirmation'))
+									<span class="error" style="color: red">
+										<strong>{{ $errors->first('password_confirmation') }}</strong>
+									</span>
+								@endif
 							</div>
 						</div>
 						

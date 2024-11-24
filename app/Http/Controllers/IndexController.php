@@ -23,7 +23,7 @@ class IndexController extends Controller
         // Food Delivered: Count all completed orders
         $foodDeliveredCount = Order::where('status', 'completed')->count();
 
-        return view('index', compact('restaurants','satisfiedCustomerCount', 'restaurantCount', 'foodDeliveredCount'));
+        return view('index', compact('restaurants','satisfiedCustomerCount', 'restaurantCount', 'foodDeliveredCount'))->with('success','Homepage');
 
 
     }

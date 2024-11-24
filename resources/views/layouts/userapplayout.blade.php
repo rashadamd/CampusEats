@@ -37,6 +37,7 @@
 
 <body class="menu-layer">
 
+
 	<!-- loader start-->
 	<div class="page-loader">
 		<div class="wrapper">
@@ -172,7 +173,7 @@
     </header>
 
 @yield('content')
-
+		
   		<!-- footer -->
 		<footer class="gap no-bottom" style="background-color: #363636;">
 			<div class="container">
