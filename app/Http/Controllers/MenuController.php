@@ -40,6 +40,7 @@ class MenuController extends Controller
                 'price' => $request->price,
             ]);
         } catch (\Exception $e) {
+            
             return redirect()->back()->withErrors(['error' => 'Error creating menu item: ' . $e->getMessage()]);
         }
     

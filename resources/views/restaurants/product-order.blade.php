@@ -24,6 +24,8 @@
                                                 <th class="align-middle pe-7">Date</th>
                                                 <th class="align-middle" style="min-width: 12.5rem;">Ship To</th>
                                                 <th class="align-middle text-end">Status</th>
+                                                <th class="align-middle text-end">Menu Name</th>
+                                                <th class="align-middle text-end">Quantity</th>
                                                 <th class="align-middle text-end">Amount</th>
                                                 <th class="align-middle text-end">Select Status</th>
                                             </tr>
@@ -49,7 +51,8 @@
                                                         <span class="badge badge-danger">Pending<span class="ms-1 fa fa-clock"></span></span>
                                                     @endif
                                                 </td>
-
+                                                <td class="py-2 text-end">{{ $order->menu_name }}</td>
+                                                <td class="py-2 text-end">{{ $order->qty }}</td>
                                                 <td class="py-2 text-end">Rs. {{ $order->amount }}</td>
                                                 <!-- <td class="py-2 text-end">
                                                     <div class="dropdown text-sans-serif">
@@ -113,61 +116,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-<!-- 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const updateStatusLinks = document.querySelectorAll('.update-status');
-
-                updateStatusLinks.forEach(link => {
-                    link.addEventListener('click', function () {
-                        const orderId = this.getAttribute('data-orderid');
-                        const newStatus = this.getAttribute('data-status');
-
-                        fetch(`/update-order-status/${orderId}`, {
-                            method: 'POST',
-                            headers: {
-                                'X-CSRF-TOKEN': '{{ csrf_token() }}',
-                                'Content-Type': 'application/json',
-                            },
-                            body: JSON.stringify({ status: newStatus }),
-                        })
-                        .then(response => response.json())
-                        .then(data => {
-                            if (data.success) {
-                                // Update dropdown button text
-                                document.getElementById(`order-dropdown-${orderId}`).textContent = newStatus.charAt(0).toUpperCase() + newStatus.slice(1);
-
-                                // Optionally, update the status badge dynamically
-                                const statusBadgeCell = document.querySelector(`#order-status-badge-${orderId}`);
-                                if (statusBadgeCell) {
-                                    statusBadgeCell.innerHTML = generateBadgeHTML(newStatus);
-                                }
-                            } else {
-                                alert('Error updating status. Please try again.');
-                            }
-                        })
-                        .catch(error => console.error('Error:', error));
-                    });
-                });
-
-                function generateBadgeHTML(status) {
-                    switch (status) {
-                        case 'completed':
-                            return '<span class="badge badge-success">Completed<span class="ms-1 fa fa-check"></span></span>';
-                        case 'processing':
-                            return '<span class="badge badge-warning">Processing<span class="ms-1 fa fa-spinner fa-spin"></span></span>';
-                        case 'pending':
-                            return '<span class="badge badge-secondary">Pending<span class="ms-1 fa fa-clock"></span></span>';
-                        default:
-                            return '';
-                    }
-                }
-            });
-        </script> -->
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {

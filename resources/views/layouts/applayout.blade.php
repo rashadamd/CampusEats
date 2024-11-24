@@ -45,7 +45,6 @@
     </div>
   </div>
 </div>
-
 @endif
 
 @if (session('failure'))
@@ -59,7 +58,6 @@
     </div>
   </div>
 </div>
-
 @endif
 	<!-- loader start-->
 
@@ -265,12 +263,9 @@
 	<script src="assets/js/custom.js"></script>
 
 
-
  <script src="assets/js/jquery.waypoints.min.js" type="64d060d09a2ef496689f6e54-text/javascript"></script> 
  <script src="assets/js/jquery.scrollUp.min.js" type="64d060d09a2ef496689f6e54-text/javascript"></script> 
- 
-</body>
-	<script>
+ <script>
 		document.addEventListener('DOMContentLoaded', () => {
 			const toastLiveExample = document.getElementById('liveToast');
 			const toast = new bootstrap.Toast(toastLiveExample);
@@ -278,3 +273,5 @@
 		});
 
     </script>
+</body>
+	

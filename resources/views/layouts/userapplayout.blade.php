@@ -36,6 +36,31 @@
 </head>
 
 <body class="menu-layer">
+@if (session('success'))
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast bg-success text-white" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true">
+    <div class="toast-header">
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      {{ session('success') }}
+    </div>
+  </div>
+</div>
+@endif
+
+@if (session('failure'))
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast bg-danger text-white" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+    <div class="toast-header">
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      {{ session('failure') }}
+    </div>
+  </div>
+</div>
+@endif
 
 
 	<!-- loader start-->
@@ -115,10 +140,18 @@
 									<span class="ms-2">Profile </span>
 								</a>
 							
-								<a href="../login" class="dropdown-item ai-icon">
-									<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
-									<span class="ms-2">Logout </span>
-								</a>
+								<form method="POST" action="{{ route('logout') }}" style="display: inline;">
+									@csrf
+									<button type="submit" class="dropdown-item ai-icon">
+										<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+											<polyline points="16 17 21 12 16 7"></polyline>
+											<line x1="21" y1="12" x2="9" y2="12"></line>
+										</svg>
+										<span class="ms-2">Logout</span>
+									</button>
+								</form>
+
 
 							</div>
 						</li>
@@ -255,5 +288,13 @@
 	
 	 <script src="user/assets/js/jquery.waypoints.min.js" type="64d060d09a2ef496689f6e54-text/javascript"></script> 
 	 <script src="user/assets/js/jquery.scrollUp.min.js" type="64d060d09a2ef496689f6e54-text/javascript"></script> 
+	 <script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const toastLiveExample = document.getElementById('liveToast');
+			const toast = new bootstrap.Toast(toastLiveExample);
+			toast.show(); // Automatically display the toast
+		});
+
+    </script>
 	
 	</body>

@@ -31,6 +31,7 @@
 										<th>Location</th>
 										<th>Mobile No.</th>
 										<th>Quantity</th>
+										<th>Menu Name</th>
 										<th>Amount</th>
 										<th>Status Order</th>
 										
@@ -38,6 +39,7 @@
 									</tr>
 								</thead>
 								<tbody>
+									
 									@foreach($orders as $order)
 									<tr>
 										
@@ -47,9 +49,9 @@
 										<td class="text-ov">{{ $order->address }}</td>
 										<td class="text-ov">{{ $order->mobile_no }}</td>
 										<td class="text-ov">{{ $order->quantity }}</td>
+										<td class="text-ov">{{ $order->menu_name }}</td>									
 										<td class="text-ov">Rs. {{ $order->amount }}</td>
-									
-									<td><span class="btn {{ $order->status === 'pending' ? 'bgl-danger text-danger' : 
+										<td><span class="btn {{ $order->status === 'pending' ? 'bgl-danger text-danger' : 
 												($order->status === 'processing' ? 'bgl-warning text-warning' : 'bgl-success text-success') }} 
 												btn-rounded btn-sm">{{ ucfirst($order->status) }}</span></td>
 									</tr>

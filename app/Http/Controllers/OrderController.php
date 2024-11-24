@@ -76,11 +76,12 @@ class OrderController extends Controller
                 'customers.name as customer',
                 'customers.address',
                 'orders.quantity', // Include quantity
+                'menus.name as menu_name',
                 'orders.amount',
                 'customers.mobile_no',
                 'orders.status'
             )
-            //->orderBy('orders.created_at', 'desc')
+            ->orderBy('orders.created_at', 'asc')
             ->get();
 
         // Pass the orders to the restaurants.order-page view
@@ -102,12 +103,13 @@ class OrderController extends Controller
                 'orders.created_at as date',
                 'restaurants.name as restaurant',
                 'restaurants.address',
+                'menus.name as menu_name',
                 'orders.quantity',
                 'orders.amount',
                 'restaurants.mobile_no',
                 'orders.status'
             )
-            // ->orderBy('orders.created_at', 'desc')
+            ->orderBy('orders.created_at', 'asc')
             ->get();
     
         // Pass the orders to the user.order-page view
@@ -116,7 +118,7 @@ class OrderController extends Controller
     
 
     public function productorder()
-{
+    {
     // Get the logged-in restaurant user
     $restaurant = Auth::user();
     $user = Auth::user();
@@ -134,9 +136,11 @@ class OrderController extends Controller
             'customers.mobile_no as customer_mobile',
             'customers.address as customer_address',
             'orders.status',
+            'orders.quantity as qty', 
+            'menus.name as menu_name',
             'orders.amount'
         )
-        //->orderBy('orders.created_at', 'desc')
+        ->orderBy('orders.created_at', 'asc')
         ->get();
 
     return view('restaurants.product-order', compact('user','orders'));

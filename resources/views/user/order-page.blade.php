@@ -73,6 +73,7 @@
 										<th>Date</th>
 										<th>Restaurant</th>
 										<th>Address</th>
+										<th>Menu Name</th>
 										<th>Quantity</th>
 										<th>Amount</th>
 										<th>Mobile No.</th>
@@ -90,6 +91,7 @@
 										<td class="wspace-no">{{ $order->date }}</td>
 										<td>{{ $order->restaurant }}</td>
 										<td class="text-ov">{{ $order->address }}</td>
+										<td class="text-ov">{{ $order->menu_name }}</td>
 										<td class="text-ov">{{ $order->quantity }}</td> 
 										<td class="text-ov">Rs. {{ $order->amount }}</td>
 										<td class="text-ov">{{ $order->mobile_no }}</td>

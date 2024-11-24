@@ -126,21 +126,27 @@ class UserController extends Controller
                 $user = Auth::user();
 
                 if ($user->client === 'restaurant') {
-                    return redirect()->intended('/dashboard');
+                    return redirect()->intended('/dashboard')->with('success', 'Login successful! ');
                 } elseif ($user->client === 'user') {
-                    return redirect()->intended('/userindex');
+                    return redirect()->intended('/userindex')->with('success', 'Login successful! ');
                 }
             }
 
          // If authentication fails
-         return back()->withErrors(['loginError' => 'Invalid username or password'])->withInput();
+         return back()->withErrors(['loginError' => 'Invalid username or password'])->withInput()->with('failure', 'Invalid Login Credentials');
      }
 
      // Logout Function
      public function logout()
      {
-        Session::flush();
-         Auth::logout();
-         return redirect('/login')->with('success', 'You have been logged out');
+      
+        Auth::logout();
+
+        session()->invalidate();
+
+        session()->regenerateToken();
+
+        return redirect()->route('login')->with('success', 'You have been logged out');
+         //return redirect('/login')->with('success', 'You have been logged out');
      }
 }

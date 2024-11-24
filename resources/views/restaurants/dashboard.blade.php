@@ -94,18 +94,18 @@
 
 				<div class="row">
 					<!-- KPI Cards -->
-					<div class="col-md-3">
+					<div class="col-md-2">
 						<div class="card">
 							<div class="card-body">
-								<h5>Total Menus</h5>
+								<h6>Total Menus</h6>
 								<h2>{{ $totalMenus }}</h2>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-4">
 						<div class="card">
 							<div class="card-body">
-								<h5>Total Revenue</h5>
+								<h6>Total Revenue</h6>
 								<h2>Rs. {{ number_format($totalRevenue, 2) }}</h2>
 							</div>
 						</div>
@@ -113,7 +113,7 @@
 					<div class="col-md-3">
 						<div class="card">
 							<div class="card-body">
-								<h5>Total Orders</h5>
+								<h6>Total Orders</h6>
 								<h2>{{ $totalOrders }}</h2>
 							</div>
 						</div>
@@ -121,7 +121,7 @@
 					<div class="col-md-3">
 						<div class="card">
 							<div class="card-body">
-								<h5>Total Customers</h5>
+								<h6>Total Customers</h6>
 								<h2>{{ $totalCustomers }}</h2>
 							</div>
 						</div>

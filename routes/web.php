@@ -93,6 +93,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/dashboard', [DashboardController::class, 'restDashboard'])->name('dashboard');
     Route::put('/orders-{order}', [DashboardController::class, 'update'])->name('orders.update');
+
+    Route::post('/logout', [UserController::class, 'logout'])->name('logout');
     
 });
 
