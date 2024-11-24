@@ -37,7 +37,7 @@
 									<div class="card-body d-flex align-items-center justify-content-between">
 										<div class="menu">
 											<span class="font-w500 fs-16 d-block mb-2">Total Revenue</span>
-											<h2>$87,561</h2>
+											<h2>Rs. 87,561</h2>
 										</div>	
 										<div class="d-inline-block position-relative donut-chart-sale">
 											<span class="donut1" data-peity='{ "fill": ["rgb(98, 79, 209,1)", "rgba(247, 245, 255)"],   "innerRadius": 35, "radius": 10}'>5/6</span>
@@ -153,8 +153,8 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-    // Sales Chart Data
-    const salesData = @json($salesChartData);
+
+	const salesData = @json($salesChartData);
 
     const labels = salesData.map(item => item.date);
     const data = salesData.map(item => item.total_sales);

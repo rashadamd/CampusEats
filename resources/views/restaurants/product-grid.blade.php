@@ -30,7 +30,7 @@
                                                 <li><i class="fa fa-star-half-empty"></i></li>
                                                 <li><i class="fa fa-star-half-empty"></i></li>
                                             </ul>
-                                            <span class="price">${{ number_format($menu->price, 2) }}</span>
+                                            <span class="price">Rs. {{ number_format($menu->price, 2) }}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -52,7 +52,7 @@
                                         <div class="new-arrival-content text-center mt-3">
                                             <h4>{{ $menu->name }}</h4>
                                             
-                                            <span class="price">${{ number_format($menu->price, 2) }}</span>
+                                            <span class="price">Rs. {{ number_format($menu->price, 2) }}</span>
                                         </div>
                                     </div>
                                     <!-- Delete Button -->

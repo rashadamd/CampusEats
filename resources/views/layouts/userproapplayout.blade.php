@@ -16,21 +16,22 @@
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMZ/3q3vi4tG7FfA61LVXoTzF8S/WL9s1Cv3Kka" crossorigin="anonymous">
 
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<!-- owl carousel -->
-<link rel="stylesheet" href="user/assets/css/owl.carousel.min.css">
-<link rel="stylesheet" href="user/assets/css/owl.theme.default.min.css">
-<!-- nice-select -->
-<link rel="stylesheet" href="user/assets/css/nice-select.css">
-<!-- aos -->
-<link rel="stylesheet" href="user/assets/css/aos.css">
-<!-- style -->
-<link rel="stylesheet" href="user/assets/css/style.css">
-<!-- responsive -->
-<link rel="stylesheet" href="user/assets/css/responsive.css">
-<!-- color -->
-<link rel="stylesheet" href="user/assets/css/color.css">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="user/assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="user/assets/css/owl.theme.default.min.css">
+	<!-- nice-select -->
+	<link rel="stylesheet" href="user/assets/css/nice-select.css">
+	<!-- aos -->
+	<link rel="stylesheet" href="user/assets/css/aos.css">
+	<!-- style -->
+	<link rel="stylesheet" href="user/assets/css/style.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="user/assets/css/responsive.css">
+	<!-- color -->
+	<link rel="stylesheet" href="user/assets/css/color.css">
 
 	<!-- FAVICONS ICON -->
 	<link rel="shortcut icon" type="image/png" href="user/images/favicon.png" />

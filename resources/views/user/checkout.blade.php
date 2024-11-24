@@ -138,7 +138,7 @@
 								</div>
 								<div class="price">
 									<div>
-										<h2 id="price-per-item">${{ $menus->price }}</h2>
+										<h2 id="price-per-item">Rs. {{ $menus->price }}</h2>
 										<span>Per Item</span>
 									</div>
 									<div>
@@ -156,7 +156,7 @@
 						<!-- Total Price -->
 						<div class="totel-price">
 							<span>To Pay:</span>
-							<h2 id="total-price">${{ $menus->price }}</h2>
+							<h2 id="total-price">Rs. {{ $menus->price }}</h2>
 						</div>
 					</div>
 				</div>

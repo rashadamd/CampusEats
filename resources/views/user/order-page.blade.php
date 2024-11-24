@@ -91,7 +91,7 @@
 										<td>{{ $order->restaurant }}</td>
 										<td class="text-ov">{{ $order->address }}</td>
 										<td class="text-ov">{{ $order->quantity }}</td> 
-										<td class="text-ov">${{ $order->amount }}</td>
+										<td class="text-ov">Rs. {{ $order->amount }}</td>
 										<td class="text-ov">{{ $order->mobile_no }}</td>
 									
 									<td><span class="btn {{ $order->status === 'pending' ? 'bgl-danger text-danger' : 

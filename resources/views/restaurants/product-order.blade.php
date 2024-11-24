@@ -50,7 +50,7 @@
                                                     @endif
                                                 </td>
 
-                                                <td class="py-2 text-end">${{ $order->amount }}</td>
+                                                <td class="py-2 text-end">Rs. {{ $order->amount }}</td>
                                                 <!-- <td class="py-2 text-end">
                                                     <div class="dropdown text-sans-serif">
                                                         <button class="btn btn-primary tp-btn-light sharp" type="button" id="order-dropdown-{{ $order->orderid }}" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">

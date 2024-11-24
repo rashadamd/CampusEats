@@ -35,9 +35,6 @@
 	
 </head>
 
-
-
-
 <body class="menu-layer">
 
 	<!-- loader start-->
@@ -109,7 +106,7 @@
 						 
 						<li class="nav-item dropdown  header-profile" >
 							<a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
-								<img src="{{ asset('storage/'.$user->image) }}" width="56" alt=""/>
+								<img src="{{ asset('storage/'.$user->image) }}" width="56" alt="" style="border-radius: 50%;"/>
 							</a>
 							<div class="dropdown-menu dropdown-menu-end">
 								<a href="userprofile" class="dropdown-item ai-icon">
