@@ -11,7 +11,7 @@
 						</ol>
 					</div>
 				</div>	
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-xl-6">
 						<div class="row">
 							<div class="col-xl-6 col-sm-6">
@@ -90,8 +90,91 @@
 							</div>
 						</div>
 					</div>
+				</div> -->
+
+				<div class="row">
+					<!-- KPI Cards -->
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-body">
+								<h5>Total Menus</h5>
+								<h2>{{ $totalMenus }}</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-body">
+								<h5>Total Revenue</h5>
+								<h2>Rs. {{ number_format($totalRevenue, 2) }}</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-body">
+								<h5>Total Orders</h5>
+								<h2>{{ $totalOrders }}</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-body">
+								<h5>Total Customers</h5>
+								<h2>{{ $totalCustomers }}</h2>
+							</div>
+						</div>
+					</div>
 				</div>
-				
+
+    <!-- Order Status Overview -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h4>Order Status Overview</h4>
+            <ul>
+                <li>Pending: {{ $orderStatus['pending'] }}</li>
+                <li>Processing: {{ $orderStatus['processing'] }}</li>
+                <li>Completed: {{ $orderStatus['completed'] }}</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sales Chart -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <canvas id="salesChart"></canvas>
+        </div>
+    </div>
+
+
  </div>
 
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Sales Chart Data
+    const salesData = @json($salesChartData);
+
+    const labels = salesData.map(item => item.date);
+    const data = salesData.map(item => item.total_sales);
+
+    const ctx = document.getElementById('salesChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Total Sales',
+                data: data,
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 2,
+                fill: false
+            }]
+        },
+        options: {
+            responsive: true,
+        }
+    });
+</script>
 @endsection

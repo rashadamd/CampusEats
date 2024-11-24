@@ -70,7 +70,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/restaurantcard', [UserController::class, 'restaurantcard'])->name('restaurantcard');
     //Route::get('/restaurants', [UserController::class, 'restaurants'])->name('restaurants');
 
-    Route::get('/dashboard', [RestaurantController::class, 'dashboard'])->name('dashboard');
+    // Route::get('/dashboard', [RestaurantController::class, 'dashboard'])->name('dashboard');
     Route::get('/profile', [RestaurantController::class, 'profile'])->name('profile');
     // Route::get('/orderpage', [RestaurantController::class, 'orderpage'])->name('orderpage');
     Route::get('/productgrid', [MenuController::class, 'productgrid'])->name('productgrid');
@@ -90,6 +90,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/productorder', [OrderController::class, 'productorder'])->name('productorder');
     Route::post('/update-order-status/{orderid}', [OrderController::class, 'updateOrderStatus']);
 
+
+    Route::get('/dashboard', [DashboardController::class, 'restDashboard'])->name('dashboard');
+    Route::put('/orders-{order}', [DashboardController::class, 'update'])->name('orders.update');
     
 });
 
