@@ -46,6 +46,7 @@ Run Composer to install backend dependencies:
 ```bash
 composer install
 ```
+
 Install frontend dependencies using npm:
 ```bash
 npm install
