@@ -35,12 +35,11 @@ Open your terminal and run the following command to clone the repository:
 ```bash
 git clone https://github.com/your-username/campuseats.git
 ```
+
 Navigate into the project directory:
 ```bash
 cd campuseats
 ```
-
----
 
 ### **Step 2: Install Dependencies**
 Run Composer to install backend dependencies:
