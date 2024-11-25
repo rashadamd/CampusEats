@@ -16,6 +16,7 @@ class RestaurantMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
+        
         if (Auth::check() && Auth::user()->client === 'restaurant') {
             return $next($request);
         }

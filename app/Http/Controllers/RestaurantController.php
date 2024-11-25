@@ -68,4 +68,17 @@ class RestaurantController extends Controller
        // dd($user);
         return view('restaurants.menu',compact('user'));
     }
+
+    public function logout()
+    {
+     
+       Auth::logout();
+
+       session()->invalidate();
+
+       session()->regenerateToken();
+
+       return redirect()->route('login')->with('success', 'You have been logged out');
+        //return redirect('/login')->with('success', 'You have been logged out');
+    }
 }

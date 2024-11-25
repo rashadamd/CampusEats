@@ -113,7 +113,7 @@ Route::middleware(['restaurant'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'restDashboard'])->name('dashboard');
     Route::put('/orders-{order}', [DashboardController::class, 'update'])->name('orders.update');
 
-    Route::post('/logout', [UserController::class, 'logout'])->name('logout');
+    //Route::post('/logout', [RestaurantController::class, 'logout'])->name('logout');
 });
 
 // Routes for Users
@@ -129,6 +129,9 @@ Route::middleware(['user'])->group(function () {
     Route::post('/checkout', [OrderController::class, 'store'])->name('checkout.store');
     Route::get('/checkout-{id}',[ OrderController::class, 'checkout']);
     Route::get('/userorderpage', action: [OrderController::class, 'userorderpage'])->name('userorderpage');
-    Route::post('/logout', [UserController::class, 'logout'])->name('logout');
+
+   // Route::post('/logout', [UserController::class, 'logout'])->name('logout');
 
 });
+
+Route::post('/logout', [UserController::class, 'logout'])->name('logout');
