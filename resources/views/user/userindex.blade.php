@@ -133,19 +133,19 @@
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12"  data-aos-delay="300" data-aos-duration="400">
 						<div class="count-time">
-								<h2 class="timer count-title count-number" data-to="{{ $satisfiedCustomerCount }}" data-speed="1000">{{ $satisfiedCustomerCount }}</h2>
+								<h2 class="timer count-title count-number" data-to="{{ $satisfiedCustomerCount }}" data-speed="5000">{{ $satisfiedCustomerCount }}</h2>
 									<p>Satisfied Customer</p>
 						</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12"  data-aos-delay="400" data-aos-duration="500">
 						<div class="count-time">
-								<h2 class="timer count-title count-number" data-to="{{ $restaurantCount }}" data-speed="1000">{{ $restaurantCount }}</h2>
+								<h2 class="timer count-title count-number" data-to="{{ $restaurantCount }}" data-speed="5000">{{ $restaurantCount }}</h2>
 									<p>Best Restaurants</p>
 						</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12"  data-aos-delay="500" data-aos-duration="600">
 						<div class="count-time sp">
-								<h2 class="timer count-title count-number" data-to="{{ $foodDeliveredCount }}" data-speed="1000">{{ $foodDeliveredCount }}</h2>
+								<h2 class="timer count-title count-number" data-to="{{ $foodDeliveredCount }}" data-speed="5000">{{ $foodDeliveredCount }}</h2>
 									<p>Food Delivered</p>
 						</div>
 				</div>
